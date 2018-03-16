@@ -7,6 +7,7 @@
 	[
 		"BracketHighlighter",
 		"Clang Format",
+		"CMake",
 		"FileIcons",
 		"Package Control"
 	]
