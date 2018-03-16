@@ -10,6 +10,7 @@
 		"CMake",
 		"FileIcons",
 		"Fix Mac Path",
+		"GitGutter",
 		"Package Control"
 	]
 }
