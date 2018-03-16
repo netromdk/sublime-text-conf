@@ -9,6 +9,7 @@
 		"Clang Format",
 		"CMake",
 		"FileIcons",
+		"Fix Mac Path",
 		"Package Control"
 	]
 }
