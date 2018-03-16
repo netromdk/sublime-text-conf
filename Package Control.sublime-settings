@@ -18,6 +18,7 @@
 		"SublimeLinter-annotations",
 		"SublimeLinter-cppcheck",
 		"SublimeLinter-flake8",
+		"SublimeLinter-json",
 		"Terminal",
 		"Transpose Word"
 	]
