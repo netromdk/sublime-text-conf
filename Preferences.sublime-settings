@@ -41,4 +41,6 @@
 	"show_encoding": true,
 	"trim_trailing_white_space_on_save": true,
 	"font_size": 12,
+  "draw_indent_guides": true,
+  "indent_guide_options": ["draw_active"],
 }
