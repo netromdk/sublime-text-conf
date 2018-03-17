@@ -34,5 +34,11 @@
 	"tab_size": 2,
 	"theme": "Spacegray Eighties.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"wrap_width": 100
+	"wrap_width": 100,
+	"bold_folder_labels": true,
+	"draw_white_space": "selection",
+	"show_line_endings": true,
+	"show_encoding": true,
+	"trim_trailing_white_space_on_save": true,
+	"font_size": 12,
 }
