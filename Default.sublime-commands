@@ -1,0 +1,7 @@
+[
+  // Luxion commands.
+  {
+    "caption": "Luxion: Wrap function in comments",
+    "command": "wrap_luxion_function"
+  }
+]

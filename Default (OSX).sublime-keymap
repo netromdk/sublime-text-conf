@@ -1,4 +1,7 @@
 [
   // Show console with cmd+$ instead of the irritating normal one using backtricks.
   {"keys": ["super+$"], "command": "show_panel", "args": {"panel": "console", "toggle": true}},
+
+  // Luxion related.
+  { "keys": ["super+ctrl+l"], "command": "wrap_luxion_function" },
 ]
