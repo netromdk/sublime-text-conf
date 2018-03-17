@@ -1,3 +1,4 @@
 {
-	"binary": "/usr/local/bin/clang-format"
+	"binary": "/usr/local/bin/clang-format",
+  "style": "file",
 }
