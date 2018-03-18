@@ -1,0 +1,5 @@
+{
+  "shell_cmd": "ctest -L network --output-on-failure -j 666",
+  "working_dir": "${project_path}",
+  "path": "$PATH:/usr/local/bin/:/opt/local/bin/"
+}
