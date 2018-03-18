@@ -1,4 +1,8 @@
 {
+	"added_words":
+	[
+		"repo"
+	],
 	"binary_file_patterns":
 	[
 		"*.dds",
@@ -44,5 +48,4 @@
 	"tab_size": 2,
 	"theme": "Spacegray Eighties.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"wrap_width": 100
 }
