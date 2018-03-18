@@ -2,6 +2,10 @@
   // Show console with cmd+$ instead of the irritating normal one using backtricks.
   {"keys": ["super+$"], "command": "show_panel", "args": {"panel": "console", "toggle": true}},
 
+  // Move to BOF/EOF in emacs-like fashion.
+  {"keys": ["super+<"], "command": "move_to", "args": {"to": "bof"}},
+  {"keys": ["super+shift+<"], "command": "move_to", "args": {"to": "eof"}},
+
   // Luxion related.
   { "keys": ["super+ctrl+l"], "command": "wrap_luxion_function" },
 
