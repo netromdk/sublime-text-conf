@@ -9,5 +9,9 @@
   {
     "caption": "Custom: Cycle spacing",
     "command": "cycle_spacing"
-  }
+  },
+  {
+    "caption": "Custom: Delete blank lines",
+    "command": "delete_blank_lines"
+  },
 ]

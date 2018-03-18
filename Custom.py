@@ -43,3 +43,40 @@ class CycleSpacingCommand(sublime_plugin.TextCommand):
   def run(self, edit):
     if not self.view.is_read_only() and self.view.size() > 0:
       self.cycle_spacing(self.view, edit)
+
+class DeleteBlankLinesCommand(sublime_plugin.TextCommand):
+  """Delete blank lines before and after cursors but leaving one newline."""
+
+  def delete_blank_lines(self, view, edit):
+    for region in view.sel():
+      begin = region.begin()
+      line_reg = view.full_line(begin)
+
+      # Find point of upward-most newline.
+      try_pos = begin
+      while True:
+        line_up_reg = view.full_line(try_pos)
+        line_text = view.substr(line_up_reg)
+        if line_text == "\n":
+          line_reg = line_up_reg
+          try_pos -= 1
+        else:
+          break
+
+      # Delete blank lines downwards.
+      rem = False
+      while True:
+        line_text = view.substr(line_reg)
+        if line_text == "\n":
+          rem = True
+          view.erase(edit, line_reg)
+        else:
+          break
+
+      # Insert newline to give space if anything was removed.
+      if rem:
+        view.insert(edit, line_reg.begin(), "\n")
+
+  def run(self, edit):
+    if not self.view.is_read_only() and self.view.size() > 0:
+      self.delete_blank_lines(self.view, edit)

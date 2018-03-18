@@ -6,7 +6,8 @@
   { "keys": ["super+ctrl+l"], "command": "wrap_luxion_function" },
 
   // Custom related.
-  { "keys": ["super+ctrl+space"], "command": "cycle_spacing"},
+  { "keys": ["super+k", "super+space"], "command": "cycle_spacing"},
+  { "keys": ["super+k", "super+d"], "command": "delete_blank_lines"},
 
   // Clang Format package: Change default key-bindings.
   { "keys": ["super+option+f"], "command": "clang_format",
