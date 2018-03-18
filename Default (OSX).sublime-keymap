@@ -14,6 +14,18 @@
   { "keys": ["super+k", "super+d"], "command": "delete_blank_lines"},
   { "keys": ["ctrl+a"], "command": "smart_beginning_of_line"},
 
+  // Move By Paragraph package.
+
+  // Move paragraph up/down.
+  {"keys": ["ctrl+up"], "command": "move_by_paragraph", "args": {"forward": false}},
+  {"keys": ["ctrl+down"], "command": "move_by_paragraph", "args": {"forward": true}},
+
+  // Move paragraph up/down and expand selection.
+  {"keys": ["super+shift+up"], "command": "move_by_paragraph",
+    "args": {"forward": false, "extend": true}},
+  {"keys": ["super+shift+down"], "command": "move_by_paragraph",
+    "args": {"forward": true, "extend": true}},
+
   // Clang Format package: Change default key-bindings.
   { "keys": ["super+option+f"], "command": "clang_format",
     "context": [
