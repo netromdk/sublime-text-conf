@@ -8,7 +8,11 @@ class CycleSpacingCommand(sublime_plugin.TextCommand):
   """Cycles spacing such that if more than one white space exists at cursors they will be replaced
   with one space. If only one white space exists then remove that entirely."""
 
-  def cycle_spacing(self, view, edit):
+  def run(self, edit):
+    if not self.view.is_read_only() and self.view.size() > 0:
+      self.__cycle_spacing(self.view, edit)
+
+  def __cycle_spacing(self, view, edit):
     for region in view.sel():
       begin = region.begin()
       line_reg = view.full_line(begin)
@@ -41,14 +45,14 @@ class CycleSpacingCommand(sublime_plugin.TextCommand):
         view.replace(r=line_reg, text=txt, edit=edit)
         break
 
-  def run(self, edit):
-    if not self.view.is_read_only() and self.view.size() > 0:
-      self.cycle_spacing(self.view, edit)
-
 class DeleteBlankLinesCommand(sublime_plugin.TextCommand):
   """Delete blank lines before and after cursors but leaving one newline."""
 
-  def delete_blank_lines(self, view, edit):
+  def run(self, edit):
+    if not self.view.is_read_only() and self.view.size() > 0:
+      self.__delete_blank_lines(self.view, edit)
+
+  def __delete_blank_lines(self, view, edit):
     for region in view.sel():
       begin = region.begin()
       line_reg = view.full_line(begin)
@@ -78,10 +82,6 @@ class DeleteBlankLinesCommand(sublime_plugin.TextCommand):
       nl_pos = line_reg.begin()
       if rem and nl_pos != view.size():
         view.insert(edit, nl_pos, "\n")
-
-  def run(self, edit):
-    if not self.view.is_read_only() and self.view.size() > 0:
-      self.delete_blank_lines(self.view, edit)
 
 class SmartBeginningOfLineCommand(sublime_plugin.TextCommand):
   """Go to first non white space on line. If that position is already the current position then move
