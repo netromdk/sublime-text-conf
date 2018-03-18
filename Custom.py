@@ -112,8 +112,11 @@ class SmartBeginningOfLineCommand(sublime_plugin.TextCommand):
       pos_line = begin - line_reg.begin()
       last_ws_pos = m.span()[1]
       new_pos = line_reg.begin()
-      if pos_line != last_ws_pos:
+      if pos_line > last_ws_pos or pos_line == 0:
         new_pos += last_ws_pos
+        # If whole line is white space then move to EOL.
+        if last_ws_pos == line_reg.size():
+          new_pos -= 1
       self.__replace_region(sel, region, new_pos)
 
   def __replace_region(self, sel, region, new_pos):
