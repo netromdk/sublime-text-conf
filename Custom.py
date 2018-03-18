@@ -54,7 +54,7 @@ class DeleteBlankLinesCommand(sublime_plugin.TextCommand):
       line_reg = view.full_line(begin)
 
       # Find point of upward-most newline.
-      try_pos = begin
+      try_pos = begin - 1
       while True:
         line_up_reg = view.full_line(try_pos)
         line_text = view.substr(line_up_reg)
@@ -74,9 +74,10 @@ class DeleteBlankLinesCommand(sublime_plugin.TextCommand):
         else:
           break
 
-      # Insert newline to give space if anything was removed.
-      if rem:
-        view.insert(edit, line_reg.begin(), "\n")
+      # Insert newline to give space if anything was removed but only if not at the end of the file.
+      nl_pos = line_reg.begin()
+      if rem and nl_pos != view.size():
+        view.insert(edit, nl_pos, "\n")
 
   def run(self, edit):
     if not self.view.is_read_only() and self.view.size() > 0:
