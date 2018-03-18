@@ -1,4 +1,5 @@
 import sublime_plugin
+from sublime import Region
 import re
 
 WS_RE = re.compile("(\\s)+")
@@ -80,3 +81,35 @@ class DeleteBlankLinesCommand(sublime_plugin.TextCommand):
   def run(self, edit):
     if not self.view.is_read_only() and self.view.size() > 0:
       self.delete_blank_lines(self.view, edit)
+
+class SmartBeginningOfLineCommand(sublime_plugin.TextCommand):
+  """Go to first non white space on line. If that position is already the current position then move
+  to beginning of line. Can be called in a cycling fashion."""
+
+  def goto_beginning(self, view, edit):
+    sel = view.sel()
+    for region in sel:
+      begin = region.begin()
+      line_reg = view.full_line(begin)
+      line_text = view.substr(line_reg)
+      if len(line_text) <= 1:
+        continue
+
+      m = WS_RE.match(line_text)
+      if not m:
+        continue
+
+      # If line position is not first non white space from the left then put cursor there, otherwise
+      # put at the beginning.
+      pos_line = begin - line_reg.begin()
+      last_ws_pos = m.span()[1]
+      new_pos = line_reg.begin()
+      if pos_line != last_ws_pos:
+        new_pos += last_ws_pos
+      new_reg = Region(new_pos)
+      sel.subtract(region)
+      sel.add(new_reg)
+
+  def run(self, edit):
+    if not self.view.is_read_only() and self.view.size() > 0:
+      self.goto_beginning(self.view, edit)

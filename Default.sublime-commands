@@ -14,4 +14,8 @@
     "caption": "Custom: Delete blank lines",
     "command": "delete_blank_lines"
   },
+  {
+    "caption": "Custom: Smart beginning of line",
+    "command": "smart_beginning_of_line"
+  },
 ]
