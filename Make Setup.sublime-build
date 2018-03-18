@@ -1,0 +1,5 @@
+{
+  "shell_cmd": "make setup",
+  "working_dir": "${project_path}",
+  "path": "$PATH:/usr/local/bin/:/opt/local/bin/"
+}
