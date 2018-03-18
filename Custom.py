@@ -87,7 +87,11 @@ class SmartBeginningOfLineCommand(sublime_plugin.TextCommand):
   """Go to first non white space on line. If that position is already the current position then move
   to beginning of line. Can be called in a cycling fashion."""
 
-  def goto_beginning(self, view, edit):
+  def run(self, edit):
+    if not self.view.is_read_only() and self.view.size() > 0:
+      self.__goto_beginning(self.view, edit)
+
+  def __goto_beginning(self, view, edit):
     sel = view.sel()
     for region in sel:
       begin = region.begin()
@@ -97,7 +101,10 @@ class SmartBeginningOfLineCommand(sublime_plugin.TextCommand):
         continue
 
       m = WS_RE.match(line_text)
+
+      # Go to beginning of line if no white space if found at the beginning of the line.
       if not m:
+        self.__replace_region(sel, region, line_reg.begin())
         continue
 
       # If line position is not first non white space from the left then put cursor there, otherwise
@@ -107,10 +114,9 @@ class SmartBeginningOfLineCommand(sublime_plugin.TextCommand):
       new_pos = line_reg.begin()
       if pos_line != last_ws_pos:
         new_pos += last_ws_pos
-      new_reg = Region(new_pos)
-      sel.subtract(region)
-      sel.add(new_reg)
+      self.__replace_region(sel, region, new_pos)
 
-  def run(self, edit):
-    if not self.view.is_read_only() and self.view.size() > 0:
-      self.goto_beginning(self.view, edit)
+  def __replace_region(self, sel, region, new_pos):
+    new_reg = Region(new_pos)
+    sel.subtract(region)
+    sel.add(new_reg)
