@@ -24,12 +24,18 @@ class CycleSpacingCommand(sublime_plugin.TextCommand):
         if pos_line < s[0] or pos_line > s[1]:
           continue
 
-        keep = " " if s[1] - s[0] > 1 else ""
-        txt = line_text[0:s[0]] + keep + line_text[s[1]:]
+        # If line is only a white space and a newline, let it become the newline.
+        if len(line_text) == 2 and line_text.endswith("\n"):
+          txt = line_text[1:]
 
-        # Maintain newline at end of line.
-        if line_text.endswith("\n") and not txt.endswith("\n"):
-          txt += "\n"
+        # Otherwise replace white spaces.
+        else:
+          keep = " " if (s[1] - s[0]) > 1 else ""
+          txt = line_text[0:s[0]] + keep + line_text[s[1]:]
+
+          # Maintain newline at end of line.
+          if line_text.endswith("\n") and not txt.endswith("\n"):
+            txt += "\n"
 
         view.replace(r=line_reg, text=txt, edit=edit)
         break
