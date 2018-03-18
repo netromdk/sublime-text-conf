@@ -5,6 +5,9 @@
   // Luxion related.
   { "keys": ["super+ctrl+l"], "command": "wrap_luxion_function" },
 
+  // Custom related.
+  { "keys": ["super+ctrl+space"], "command": "cycle_spacing"},
+
   // Clang Format package: Change default key-bindings.
   { "keys": ["super+option+f"], "command": "clang_format",
     "context": [

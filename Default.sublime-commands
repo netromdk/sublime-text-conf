@@ -3,5 +3,11 @@
   {
     "caption": "Luxion: Wrap function in comments",
     "command": "wrap_luxion_function"
+  },
+
+  // Custom commands.
+  {
+    "caption": "Custom: Cycle spacing",
+    "command": "cycle_spacing"
   }
 ]
