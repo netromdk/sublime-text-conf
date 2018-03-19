@@ -3,7 +3,7 @@
 {
   "show_commit_diff": "full",
   "inline_diff_auto_scroll": true,
-  "show_panel_for": ["push", "pull", "fetch", "checkout", "clone", "cherry-pick", "rebase", "branch"],
+  "show_panel_for": ["push", "pull", "fetch", "checkout", "clone", "cherry-pick", "rebase"],
   "sort_by_recent_in_branch_dashboard": true,
   "global_flags": {
     "pull": ["--rebase"],
