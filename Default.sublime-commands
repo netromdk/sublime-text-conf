@@ -4,6 +4,10 @@
     "caption": "Luxion: Wrap function in comments",
     "command": "wrap_luxion_function"
   },
+  {
+    "caption": "Luxion: Insert C++ include guard",
+    "command": "luxion_insert_cpp_include_guard"
+  },
 
   // Custom commands.
   {
