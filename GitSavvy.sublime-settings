@@ -13,4 +13,5 @@
   "git_graph_args": ["log", "-n50", "--pretty=format:%h%d %s (%ar) <%an>", "--graph"],
   "enable_branch_descriptions": false,
   "hide_help_menu": true,
+  "graph_show_more_commit_info": false,
 }
