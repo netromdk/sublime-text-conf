@@ -11,7 +11,7 @@
 
   // Custom related.
   { "keys": ["super+k", "super+space"], "command": "cycle_spacing"},
-  { "keys": ["super+k", "super+d"], "command": "delete_blank_lines"},
+  { "keys": ["super+k", "super+b"], "command": "delete_blank_lines"},
   { "keys": ["ctrl+a"], "command": "smart_beginning_of_line"},
 
   // Move By Paragraph package.
