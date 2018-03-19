@@ -3,6 +3,11 @@
 	[
 		"repo"
 	],
+	"additional_path_items":
+	[
+		"/usr/local/bin/",
+		"/opt/local/bin/"
+	],
 	"binary_file_patterns":
 	[
 		"*.dds",
