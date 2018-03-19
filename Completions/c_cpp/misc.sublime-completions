@@ -1,0 +1,14 @@
+{
+  "scope": "source.c, source.cpp, source.c++",
+  "completions": [
+    {
+      "trigger": "inc\t#include <_>",
+      "contents": "#include <$1>"
+      // NOTE: The ".." case is included with ST.
+    },
+    {
+      "trigger": "guard\tinclude guard",
+      "contents": "#ifndef $1\n#define $1\n\n$0\n\n#endif // $1"
+    }
+  ]
+}
