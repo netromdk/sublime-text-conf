@@ -1,0 +1,17 @@
+{
+  "scope": "source.c, source.cpp, source.c++",
+  "completions": [
+    {
+      "trigger": "continue\tkeyword",
+      "contents": "continue;"
+    },
+    {
+      "trigger": "break\tkeyword",
+      "contents": "break;"
+    },
+    {
+      "trigger": "return\tkeyword",
+      "contents": "return${1:};"
+    },
+  ]
+}
