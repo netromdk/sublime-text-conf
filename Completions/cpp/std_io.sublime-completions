@@ -1,0 +1,180 @@
+{
+  "scope": "source.cpp, source.c++",
+  "completions": [
+    // Stdout.
+    {
+      "trigger": "cout\tiostream",
+      "contents": "${1:std::}cout${2: << }"
+    },
+    {
+      "trigger": "wcout\tiostream",
+      "contents": "${1:std::}wcout${2: << }"
+    },
+
+    // Stderr.
+    {
+      "trigger": "cerr\tiostream",
+      "contents": "${1:std::}cerr${2: << }"
+    },
+    {
+      "trigger": "wcerr\tiostream",
+      "contents": "${1:std::}wcerr${2: << }"
+    },
+
+    // Character log.
+    {
+      "trigger": "clog\tiostream",
+      "contents": "${1:std::}clog${2: << }"
+    },
+    {
+      "trigger": "wclog\tiostream",
+      "contents": "${1:std::}wclog${2: << }"
+    },
+
+    // Stdin.
+    {
+      "trigger": "cin\tiostream",
+      "contents": "${1:std::}cin${2: >> }"
+    },
+    {
+      "trigger": "wcin\tiostream",
+      "contents": "${1:std::}wcin${2: >> }"
+    },
+
+    // I/O manipulators.
+
+    // ostream
+    {
+      "trigger": "endl\tostream",
+      "contents": "${1:std::}endl"
+    },
+    {
+      "trigger": "ends\tostream",
+      "contents": "${1:std::}ends"
+    },
+    {
+      "trigger": "flush\tostream",
+      "contents": "${1:std::}flush"
+    },
+
+    // ios
+    {
+      "trigger": "boolalpha\tios",
+      "contents": "${1:std::}boolalpha"
+    },
+    {
+      "trigger": "noboolalpha\tios",
+      "contents": "${1:std::}noboolalpha"
+    },
+    {
+      "trigger": "showbase\tios",
+      "contents": "${1:std::}showbase"
+    },
+    {
+      "trigger": "noshowbase\tios",
+      "contents": "${1:std::}noshowbase"
+    },
+    {
+      "trigger": "showpoint\tios",
+      "contents": "${1:std::}showpoint"
+    },
+    {
+      "trigger": "noshowpoint\tios",
+      "contents": "${1:std::}noshowpoint"
+    },
+    {
+      "trigger": "showpos\tios",
+      "contents": "${1:std::}showpos"
+    },
+    {
+      "trigger": "noshowpos\tios",
+      "contents": "${1:std::}noshowpos"
+    },
+    {
+      "trigger": "skipws\tios",
+      "contents": "${1:std::}skipws"
+    },
+    {
+      "trigger": "noskipws\tios",
+      "contents": "${1:std::}noskipws"
+    },
+    {
+      "trigger": "unitbuf\tios",
+      "contents": "${1:std::}unitbuf"
+    },
+    {
+      "trigger": "nounitbuf\tios",
+      "contents": "${1:std::}nounitbuf"
+    },
+    {
+      "trigger": "internal\tios",
+      "contents": "${1:std::}internal"
+    },
+    {
+      "trigger": "left\tios",
+      "contents": "${1:std::}left"
+    },
+    {
+      "trigger": "right\tios",
+      "contents": "${1:std::}right"
+    },
+    {
+      "trigger": "dec\tios",
+      "contents": "${1:std::}dec"
+    },
+    {
+      "trigger": "hex\tios",
+      "contents": "${1:std::}hex"
+    },
+    {
+      "trigger": "oct\tios",
+      "contents": "${1:std::}oct"
+    },
+    {
+      "trigger": "fixed\tios",
+      "contents": "${1:std::}fixed"
+    },
+    {
+      "trigger": "scientific\tios",
+      "contents": "${1:std::}scientific"
+    },
+    {
+      "trigger": "hexfloat\tios",
+      "contents": "${1:std::}hexfloat"
+    },
+    {
+      "trigger": "defaultfloat\tios",
+      "contents": "${1:std::}defaultfloat"
+    },
+
+    // iomanip
+    {
+      "trigger": "resetiosflags\tiomanip",
+      "contents": "${1:std::}resetiosflags(${2:std::ios_base::$0})"
+    },
+    {
+      "trigger": "setioflags\tiomanip",
+      "contents": "${1:std::}setioflags(${2:std::ios_base::$0})"
+    },
+    {
+      "trigger": "setbase\tiomanip",
+      "contents": "${1:std::}setbase(${2:n})"
+    },
+    {
+      "trigger": "setfill\tiomanip",
+      "contents": "${1:std::}setfill(${2:'$0'})"
+    },
+    {
+      "trigger": "setprecision\tiomanip",
+      "contents": "${1:std::}setprecision(${2:n})"
+    },
+    {
+      "trigger": "setw\tiomanip",
+      "contents": "${1:std::}setw(${2:n})"
+    },
+    {
+      "trigger": "quoted\tiomanip",
+      "contents": "${1:std::}quoted(${2})"
+    },
+  ]
+}
