@@ -18,4 +18,8 @@
     "caption": "Custom: Smart beginning of line",
     "command": "smart_beginning_of_line"
   },
+  {
+    "caption": "Custom: Insert C++ include guard",
+    "command": "insert_cpp_include_guard"
+  },
 ]

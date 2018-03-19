@@ -1,8 +1,12 @@
 import sublime_plugin
-from sublime import Region
 import re
+from uuid import uuid4
+from sublime import Region
+from os.path import split
+from os import listdir
 
 WS_RE = re.compile("(\\s)+")
+VC_FILES = [".git", ".hg", ".fslckout", ".bzr", "_darcs", ".svn"]
 
 class CycleSpacingCommand(sublime_plugin.TextCommand):
   """Cycles spacing such that if more than one white space exists at cursors they will be replaced
@@ -123,3 +127,29 @@ class SmartBeginningOfLineCommand(sublime_plugin.TextCommand):
     new_reg = Region(new_pos)
     sel.subtract(region)
     sel.add(new_reg)
+
+class InsertCppIncludeGuardCommand(sublime_plugin.TextCommand):
+  """Inserts C++ include guard."""
+
+  def run(self, edit):
+    if not self.view.is_read_only():
+      self.__insert_guard(edit)
+
+  def __insert_guard(self, edit):
+    guard = self.__path_to_root_guard()
+    self.view.insert(edit, 0, "#ifndef {}\n#define {}\n\n".format(guard, guard))
+    self.view.insert(edit, self.view.size(), "\n\n#endif // {}\n".format(guard))
+
+  def __path_to_root_guard(self):
+    path = self.view.file_name()
+    if path is None:
+      return uuid4().hex
+    elms = []
+    while True:
+      (path, file) = split(path)
+      if path == "" or path == "/" or file == "":
+        break
+      elms.insert(0, re.sub(r"[\.\\\/\s-]", "_", file.upper()))
+      if len(set(listdir(path)).intersection(VC_FILES)) > 0:
+        break
+    return "_".join(elms)
