@@ -1,12 +1,10 @@
 import sublime_plugin
 import re
-from uuid import uuid4
 from sublime import Region
-from os.path import split
-from os import listdir
+
+from .utils import guard_path_to_root
 
 WS_RE = re.compile("(\\s)+")
-VC_FILES = [".git", ".hg", ".fslckout", ".bzr", "_darcs", ".svn"]
 
 class CycleSpacingCommand(sublime_plugin.TextCommand):
   """Cycles spacing such that if more than one white space exists at cursors they will be replaced
@@ -136,20 +134,6 @@ class InsertCppIncludeGuardCommand(sublime_plugin.TextCommand):
       self.__insert_guard(edit)
 
   def __insert_guard(self, edit):
-    guard = self.__path_to_root_guard()
+    guard = guard_path_to_root(self.view.file_name())
     self.view.insert(edit, 0, "#ifndef {}\n#define {}\n\n".format(guard, guard))
     self.view.insert(edit, self.view.size(), "\n\n#endif // {}\n".format(guard))
-
-  def __path_to_root_guard(self):
-    path = self.view.file_name()
-    if path is None:
-      return uuid4().hex
-    elms = []
-    while True:
-      (path, file) = split(path)
-      if path == "" or path == "/" or file == "":
-        break
-      elms.insert(0, re.sub(r"[\.\\\/\s-]", "_", file.upper()))
-      if len(set(listdir(path)).intersection(VC_FILES)) > 0:
-        break
-    return "_".join(elms)
