@@ -1,0 +1,25 @@
+{
+  "scope": "source.cpp, source.c++",
+  "completions": [
+    {
+      "trigger": "qDebug\tfunc",
+      "contents": "qDebug() << $1"
+    },
+    {
+      "trigger": "qInfo\tfunc",
+      "contents": "qInfo() << $1"
+    },
+    {
+      "trigger": "qWarning\tfunc",
+      "contents": "qWarning() << $1"
+    },
+    {
+      "trigger": "qCritical\tfunc",
+      "contents": "qCritical() << $1"
+    },
+    {
+      "trigger": "qFatal\tfunc",
+      "contents": "qFatal() << $1"
+    },
+  ]
+}
