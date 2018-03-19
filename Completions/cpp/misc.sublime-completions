@@ -1,0 +1,29 @@
+{
+  "scope": "source.cpp, source.c++",
+  "completions": [
+    {
+      "trigger": "ec\tenum class",
+      "contents": "enum class $1 {\n\t$2\n};$0"
+    },
+    {
+      "trigger": "ca\tconst auto",
+      "contents": "const auto "
+    },
+    {
+      "trigger": "forr\tranged for",
+      "contents": "for (${1:const auto} ${2:&elm} : ${3:container}) {\n\t$0\n}"
+    },
+    {
+      "trigger": "lambda\t[]{..}",
+      "contents": "[$1] {\n\t$2\n}$0"
+    },
+    {
+      "trigger": "lambda\t[](..){..}",
+      "contents": "[$1]($2) {\n\t$3\n}$0"
+    },
+    {
+      "trigger": "lambda\t[](..) -> T {..}",
+      "contents": "[$1]($2) -> ${3:bool} {\n\t${4:return;}\n}$0"
+    }
+  ]
+}
