@@ -2,4 +2,15 @@
 
 {
   "show_commit_diff": "full",
+  "inline_diff_auto_scroll": true,
+  "show_panel_for": ["push", "pull", "fetch", "checkout", "clone", "cherry-pick", "rebase", "branch"],
+  "sort_by_recent_in_branch_dashboard": true,
+  "global_flags": {
+    "pull": ["--rebase"],
+    "cherry-pick": ["-x"],
+  },
+  "max_items_in_tags_dashboard": 50,
+  "git_graph_args": ["log", "-n50", "--pretty=format:%h%d %s (%ar) <%an>", "--graph"],
+  "enable_branch_descriptions": false,
+  "hide_help_menu": true,
 }
