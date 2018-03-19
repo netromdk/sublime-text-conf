@@ -2,7 +2,10 @@
 {
   "paths": {
         "linux": [],
-        "osx": ["/opt/local/Library/Frameworks/Python.framework/Versions/3.5/bin"],
+        "osx": [
+          "/opt/local/Library/Frameworks/Python.framework/Versions/3.5/bin",
+          "/opt/local/Library/Frameworks/Python.framework/Versions/3.6/bin"
+        ],
         "windows": []
     },
     "linters": {
