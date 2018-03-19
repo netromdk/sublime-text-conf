@@ -88,7 +88,7 @@ class SmartBeginningOfLineCommand(sublime_plugin.TextCommand):
   to beginning of line. Can be called in a cycling fashion."""
 
   def run(self, edit):
-    if not self.view.is_read_only() and self.view.size() > 0:
+    if self.view.size() > 0:
       self.__goto_beginning(self.view, edit)
 
   def __goto_beginning(self, view, edit):
