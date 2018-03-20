@@ -1,0 +1,357 @@
+{
+  "scope": "source.cpp, source.c++",
+  "completions": [
+    {
+      "trigger": "all_of\tfunc", 
+      "contents": "${1:std::}all_of($2)"
+    },
+    {
+      "trigger": "any_of\tfunc", 
+      "contents": "${1:std::}any_of($2)"
+    },
+    {
+      "trigger": "none_of\tfunc", 
+      "contents": "${1:std::}none_of($2)"
+    },
+    {
+      "trigger": "at\tfunc", 
+      "contents": "${1:std::}at($2)"
+    },
+    {
+      "trigger": "back\tfunc", 
+      "contents": "${1:std::}back($2)"
+    },
+    {
+      "trigger": "back_inserter\tfunc", 
+      "contents": "${1:std::}back_inserter(${2:container})"
+    },
+    {
+      "trigger": "front_inserter\tfunc", 
+      "contents": "${1:std::}front_inserter(${2:container})"
+    },
+    {
+      "trigger": "inserter\tfunc", 
+      "contents": "${1:std::}inserter(${2:container})"
+    },
+    {
+      "trigger": "begin\tfunc", 
+      "contents": "${1:std::}begin($2)"
+    },
+    {
+      "trigger": "cbegin\tfunc", 
+      "contents": "${1:std::}cbegin($2)"
+    },
+    {
+      "trigger": "rbegin\tfunc", 
+      "contents": "${1:std::}rbegin($2)"
+    },
+    {
+      "trigger": "crbegin\tfunc", 
+      "contents": "${1:std::}crbegin($2)"
+    },
+    {
+      "trigger": "before_begin\tfunc", 
+      "contents": "${1:std::}before_begin($2)"
+    },
+    {
+      "trigger": "cbefore_begin\tfunc", 
+      "contents": "${1:std::}cbefore_begin($2)"
+    },
+    {
+      "trigger": "end\tfunc", 
+      "contents": "${1:std::}end($2)"
+    },
+    {
+      "trigger": "cend\tfunc", 
+      "contents": "${1:std::}cend($2)"
+    },
+    {
+      "trigger": "rend\tfunc", 
+      "contents": "${1:std::}rend($2)"
+    },
+    {
+      "trigger": "crend\tfunc", 
+      "contents": "${1:std::}crend($2)"
+    },
+    {
+      "trigger": "capacity\tfunc", 
+      "contents": "capacity()"
+    },
+    {
+      "trigger": "reserve\tfunc", 
+      "contents": "reserve($1)"
+    },
+    {
+      "trigger": "size\tfunc", 
+      "contents": "${1:std::}size($2)"
+    },
+    {
+      "trigger": "front\tfunc", 
+      "contents": "front($1)"
+    },
+    {
+      "trigger": "data\tfunc", 
+      "contents": "${1:std::}data($2)"
+    },
+    {
+      "trigger": "distance\tfunc", 
+      "contents": "${1:std::}distance($2)"
+    },
+    {
+      "trigger": "emplace\tfunc", 
+      "contents": "emplace($2)"
+    },
+    {
+      "trigger": "emplace_back\tfunc", 
+      "contents": "emplace_back($2)"
+    },
+    {
+      "trigger": "emplace_hint\tfunc", 
+      "contents": "emplace_hint($2)"
+    },
+    {
+      "trigger": "emplace_after\tfunc", 
+      "contents": "emplace_after($2)"
+    },
+    {
+      "trigger": "emplace_front\tfunc", 
+      "contents": "emplace_front($2)"
+    },
+    {
+      "trigger": "try_emplace\tfunc", 
+      "contents": "try_emplace($2)"
+    },
+    {
+      "trigger": "equal\tfunc", 
+      "contents": "${1:std::}equal($2)"
+    },
+    {
+      "trigger": "empty\tfunc", 
+      "contents": "${1:std::}empty($2)"
+    },
+    {
+      "trigger": "erase\tfunc", 
+      "contents": "erase($1)"
+    },
+    {
+      "trigger": "erase_after\tfunc", 
+      "contents": "erase_after($2)"
+    },
+    {
+      "trigger": "fill\tfunc", 
+      "contents": "${1:std::}fill($2)"
+    },
+    {
+      "trigger": "fill_n\tfunc", 
+      "contents": "${1:std::}fill_n($2)"
+    },
+    {
+      "trigger": "find\tfunc", 
+      "contents": "${1:std::}find($2)"
+    },
+    {
+      "trigger": "find_end\tfunc", 
+      "contents": "${1:std::}find_end($2)"
+    },
+    {
+      "trigger": "find_first_of\tfunc", 
+      "contents": "${1:std::}find_first_of($2)"
+    },
+    {
+      "trigger": "find_if\tfunc", 
+      "contents": "${1:std::}find_if($2)"
+    },
+    {
+      "trigger": "find_if_not\tfunc", 
+      "contents": "${1:std::}find_if_not($2)"
+    },
+    {
+      "trigger": "for_each\tfunc", 
+      "contents": "${1:std::}for_each($2)"
+    },
+    {
+      "trigger": "for_each_n\tfunc", 
+      "contents": "${1:std::}for_each_n($2)"
+    },
+    {
+      "trigger": "generate\tfunc", 
+      "contents": "${1:std::}generate($2)"
+    },
+    {
+      "trigger": "generate_n\tfunc", 
+      "contents": "${1:std::}generate_n($2)"
+    },
+    {
+      "trigger": "includes\tfunc", 
+      "contents": "${1:std::}includes($2)"
+    },
+    {
+      "trigger": "insert\tfunc", 
+      "contents": "insert($2)"
+    },
+    {
+      "trigger": "insert_after\tfunc", 
+      "contents": "insert_after($2)"
+    },
+    {
+      "trigger": "insert_or_assign\tfunc", 
+      "contents": "${1:std::}insert_or_assign($2)"
+    },
+    {
+      "trigger": "lexicographical_compare\tfunc", 
+      "contents": "${1:std::}lexicographical_compare($2)"
+    },
+    {
+      "trigger": "max\tfunc", 
+      "contents": "${1:std::}max($2)"
+    },
+    {
+      "trigger": "min\tfunc", 
+      "contents": "${1:std::}min($2)"
+    },
+    {
+      "trigger": "min_element\tfunc", 
+      "contents": "${1:std::}min_element($2)"
+    },
+    {
+      "trigger": "max_element\tfunc", 
+      "contents": "${1:std::}max_element($2)"
+    },
+    {
+      "trigger": "minmax_element\tfunc", 
+      "contents": "${1:std::}minmax_element($2)"
+    },
+    {
+      "trigger": "move\tfunc", 
+      "contents": "${1:std::}move($2)"
+    },
+    {
+      "trigger": "forward\tfunc", 
+      "contents": "${1:std::}forward($2)"
+    },
+    {
+      "trigger": "move_backward\tfunc", 
+      "contents": "${1:std::}move_backward($2)"
+    },
+    {
+      "trigger": "move_if_except\tfunc", 
+      "contents": "${1:std::}move_if_except($2)"
+    },
+    {
+      "trigger": "next\tfunc", 
+      "contents": "${1:std::}next($2)"
+    },
+    {
+      "trigger": "next_permutation\tfunc", 
+      "contents": "${1:std::}next_permutation($2)"
+    },
+    {
+      "trigger": "nth_element\tfunc", 
+      "contents": "${1:std::}nth_element($2)"
+    },
+    {
+      "trigger": "pop\tfunc", 
+      "contents": "pop($2)"
+    },
+    {
+      "trigger": "pop_back\tfunc", 
+      "contents": "pop_back($2)"
+    },
+    {
+      "trigger": "pop_front\tfunc", 
+      "contents": "pop_front($2)"
+    },
+    {
+      "trigger": "prev\tfunc", 
+      "contents": "${1:std::}prev($2)"
+    },
+    {
+      "trigger": "prev_permutation\tfunc", 
+      "contents": "${1:std::}prev_permutation($2)"
+    },
+    {
+      "trigger": "push\tfunc", 
+      "contents": "push($2)"
+    },
+    {
+      "trigger": "push_back\tfunc", 
+      "contents": "push_back($2)"
+    },
+    {
+      "trigger": "push_front\tfunc", 
+      "contents": "push_front($2)"
+    },
+    {
+      "trigger": "random_shuffle\tfunc", 
+      "contents": "${1:std::}random_shuffle($2)"
+    },
+    {
+      "trigger": "remove\tfunc", 
+      "contents": "${1:std::}remove($2)"
+    },
+    {
+      "trigger": "remove_if\tfunc", 
+      "contents": "${1:std::}remove_if($2)"
+    },
+    {
+      "trigger": "replace\tfunc", 
+      "contents": "${1:std::}replace($2)"
+    },
+    {
+      "trigger": "reverse\tfunc", 
+      "contents": "${1:std::}reverse($2)"
+    },
+    {
+      "trigger": "search\tfunc", 
+      "contents": "${1:std::}search($2)"
+    },
+    {
+      "trigger": "search_n\tfunc", 
+      "contents": "${1:std::}search_n($2)"
+    },
+    {
+      "trigger": "regex_search\tfunc", 
+      "contents": "${1:std::}regex_search($2)"
+    },
+    {
+      "trigger": "shrink_to_fit\tfunc", 
+      "contents": "shrink_to_fit($2)"
+    },
+    {
+      "trigger": "sort\tfunc", 
+      "contents": "${1:std::}sort($2)"
+    },
+    {
+      "trigger": "splice\tfunc", 
+      "contents": "${1:std::}splice($2)"
+    },
+    {
+      "trigger": "splice_after\tfunc", 
+      "contents": "${1:std::}splice_after($2)"
+    },
+    {
+      "trigger": "stable_sort\tfunc", 
+      "contents": "${1:std::}stable_sort($2)"
+    },
+    {
+      "trigger": "partial_sort\tfunc", 
+      "contents": "${1:std::}partial_sort($2)"
+    },
+    {
+      "trigger": "swap\tfunc", 
+      "contents": "${1:std::}swap($2)"
+    },
+    {
+      "trigger": "top\tfunc", 
+      "contents": "top($2)"
+    },
+    {
+      "trigger": "transform\tfunc", 
+      "contents": "${1:std::}transform($2)"
+    },
+    {
+      "trigger": "unique\tfunc", 
+      "contents": "${1:std::}unique($2)"
+    },
+  ]
+}

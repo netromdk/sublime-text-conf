@@ -1,0 +1,37 @@
+{
+  "scope": "source.cpp, source.c++",
+  "completions": [
+    {
+      "trigger": "unique_ptr\tmemory", 
+      "contents": "${1:std::}unique_ptr<${2:type}>"
+    },
+    {
+      "trigger": "make_unique\tmemory",
+      "contents": "${1:std::}make_unique<${2:type}>(${3:args})"
+    },
+    {
+      "trigger": "shared_ptr\tmemory", 
+      "contents": "${1:std::}shared_ptr<${2:type}>"
+    },
+    {
+      "trigger": "make_shared\tmemory",
+      "contents": "${1:std::}make_shared<${2:type}>(${3:args})"
+    },
+    {
+      "trigger": "weak_ptr\tmemory", 
+      "contents": "${1:std::}weak_ptr<${2:type}>"
+    },
+    {
+      "trigger": "enable_shared_from_this\tmemory", 
+      "contents": "${1:std::}enable_shared_from_this<${2:type}>"
+    },
+    {
+      "trigger": "shared_from_this\tmemory", 
+      "contents": "shared_from_this();"
+    },
+    {
+      "trigger": "weak_from_this\tmemory", 
+      "contents": "weak_from_this();"
+    },
+  ]
+}

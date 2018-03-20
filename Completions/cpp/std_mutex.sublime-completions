@@ -1,0 +1,29 @@
+{
+  "scope": "source.cpp, source.c++",
+  "completions": [
+    {
+      "trigger": "mutex\tmutex", 
+      "contents": "${1:std::}mutex"
+    },
+    {
+      "trigger": "lock_guard\tmutex", 
+      "contents": "${1:std::}lock_guard<${2:std::mutex}>"
+    },
+    {
+      "trigger": "unique_lock\tmutex", 
+      "contents": "${1:std::}unique_lock<${2:std::mutex}>"
+    },
+    {
+      "trigger": "timed_mutex\tmutex", 
+      "contents": "${1:std::}timed_mutex"
+    },
+    {
+      "trigger": "recursive_mutex\tmutex", 
+      "contents": "${1:std::}recursive_mutex"
+    },
+    {
+      "trigger": "recursive_timed_mutex\tmutex", 
+      "contents": "${1:std::}recursive_timed_mutex"
+    },
+  ]
+}

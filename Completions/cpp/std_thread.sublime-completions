@@ -1,0 +1,13 @@
+{
+  "scope": "source.cpp, source.c++",
+  "completions": [
+    {
+      "trigger": "thread\tthread", 
+      "contents": "${1:std::}thread"
+    },
+    {
+      "trigger": "this_thread\tthread", 
+      "contents": "${1:std::}this_thread"
+    },
+  ]
+}
