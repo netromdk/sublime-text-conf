@@ -253,5 +253,9 @@
       "trigger": "I-QFormLayout\tinc",
       "contents": "#include <QFormLayout>\n"
     },
+    {
+      "trigger": "I-QPair\tinc",
+      "contents": "#include <QPair>\n"
+    },
   ]
 }
