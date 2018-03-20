@@ -26,6 +26,9 @@
   {"keys": ["super+shift+down"], "command": "move_by_paragraph",
     "args": {"forward": true, "extend": true}},
 
+  // SublimeLinter package: Add key-binding for show line errors.
+  { "keys": ["super+ctrl+shift+l"], "command": "sublime_linter_line_report" },
+
   // Clang Format package: Change default key-bindings.
   // cmd+alt+f -> format selection
   // cmd+alt+shift+f -> format whole buffer
