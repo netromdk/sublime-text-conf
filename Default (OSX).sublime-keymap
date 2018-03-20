@@ -7,7 +7,7 @@
   {"keys": ["super+shift+<"], "command": "move_to", "args": {"to": "eof"}},
 
   // Luxion related.
-  { "keys": ["super+ctrl+l"], "command": "wrap_luxion_function" },
+  { "keys": ["super+ctrl+w"], "command": "wrap_luxion_function" },
 
   // Custom related.
   { "keys": ["super+k", "super+space"], "command": "cycle_spacing"},
