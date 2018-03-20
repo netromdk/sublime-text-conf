@@ -27,7 +27,17 @@
     "args": {"forward": true, "extend": true}},
 
   // Clang Format package: Change default key-bindings.
-  { "keys": ["super+option+f"], "command": "clang_format",
+  // cmd+alt+f -> format selection
+  // cmd+alt+shift+f -> format whole buffer
+  { "keys": ["super+option+f"], 
+    "command": "clang_format",
+    "context": [
+      {"key": "selector", "operator": "equal", "operand": "source.c++"}
+    ],
+  },
+  { "keys": ["super+option+shift+f"], 
+    "command": "clang_format", 
+    "args": {"whole_buffer": true},
     "context": [
       {"key": "selector", "operator": "equal", "operand": "source.c++"}
     ],
@@ -38,10 +48,24 @@
       {"key": "selector", "operator": "equal", "operand": "source.c"}
     ],
   },
+  { "keys": ["super+option+shift+f"], 
+    "command": "clang_format", 
+    "args": {"whole_buffer": true},
+    "context": [
+      {"key": "selector", "operator": "equal", "operand": "source.c"}
+    ],
+  },
 
   { "keys": ["super+option+f"], "command": "clang_format",
     "context": [
       {"key": "selector", "operator": "equal", "operand": "source.js"}
     ]
-  }
+  },
+  { "keys": ["super+option+shift+f"], 
+    "command": "clang_format", 
+    "args": {"whole_buffer": true},
+    "context": [
+      {"key": "selector", "operator": "equal", "operand": "source.js"}
+    ],
+  },
 ]
