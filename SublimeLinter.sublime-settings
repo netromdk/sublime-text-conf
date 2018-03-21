@@ -17,6 +17,12 @@
         "--ignore", "E111,E114,E121,E126,E127,E302,E305",
         "--max-line-length", "100"
       ]
+    },
+    "cppcheck": {
+      "args": [
+        "--language", "c++",
+        "--std", "c++11",
+      ]
     }
   },
 
