@@ -10,13 +10,36 @@
           "/opt/local/bin",
         ],
         "windows": []
+  },
+  "linters": {
+    "flake8": {
+      "args": [
+        "--ignore", "E111,E114,E121,E126,E127,E302,E305",
+        "--max-line-length", "100"
+      ]
+    }
+  },
+
+  // Using "Edge Theme Addon - Linter Theme".
+  "gutter_theme": "Packages/Edge Theme Addon - Linter Theme/Edge.gutter-theme",
+  "styles": [
+    {
+      "mark_style": "outline",
+      "priority": 1,
+      "scope": "region.yellowish markup.changed.sublime_linter markup.warning.sublime_linter",
+      "icon": "Packages/Edge Theme Addon - Linter Theme/warning.png", // "dot"
+      "types": [
+        "warning"
+      ]
     },
-    "linters": {
-      "flake8": {
-        "args": [
-          "--ignore", "E111,E114,E121,E126,E127,E302,E305",
-          "--max-line-length", "100"
-        ]
-      }
-    },
+    {
+      "mark_style": "outline",
+      "priority": 1,
+      "scope": "region.redish markup.deleted.sublime_linter markup.error.sublime_linter",
+      "icon": "Packages/Edge Theme Addon - Linter Theme/error.png", // dot
+      "types": [
+        "error"
+      ]
+    }
+  ],
 }
