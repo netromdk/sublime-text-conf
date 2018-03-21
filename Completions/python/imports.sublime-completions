@@ -1,0 +1,429 @@
+{
+  "scope": "source.python",
+  "completions": [
+    {
+      "trigger": "from\tfrom .. import ..", 
+      "contents": "from ${1:module} import ${2:symbol}"
+    },
+    {
+      "trigger": "I-sys\timport", 
+      "contents": "import sys\n"
+    },
+    {
+      "trigger": "I-ConfigParser\timport",
+      "contents": "import ConfigParser\n"
+    },
+    {
+      "trigger": "I-DocXMLRPCServer\timport",
+      "contents": "import DocXMLRPCServer\n"
+    },
+    {
+      "trigger": "I-HTMLParser\timport",
+      "contents": "import HTMLParser\n"
+    },
+    {
+      "trigger": "I-Queue\timport",
+      "contents": "import Queue\n"
+    },
+    {
+      "trigger": "I-SimpleXMLRPCServer\timport",
+      "contents": "import SimpleXMLRPCServer\n"
+    },
+    {
+      "trigger": "I-SocketServer\timport",
+      "contents": "import SocketServer\n"
+    },
+    {
+      "trigger": "I-__builtin__\timport",
+      "contents": "import __builtin__\n"
+    },
+    {
+      "trigger": "I-__future__\timport",
+      "contents": "import __future__\n"
+    },
+    {
+      "trigger": "I-_dummy_thread\timport",
+      "contents": "import _dummy_thread\n"
+    },
+    {
+      "trigger": "I-_markupbase\timport",
+      "contents": "import _markupbase\n"
+    },
+    {
+      "trigger": "I-_winreg\timport",
+      "contents": "import _winreg\n"
+    },
+    {
+      "trigger": "I-abc\timport",
+      "contents": "import abc\n"
+    },
+    {
+      "trigger": "I-argparse\timport",
+      "contents": "import argparse\n"
+    },
+    {
+      "trigger": "I-ast\timport",
+      "contents": "import ast\n"
+    },
+    {
+      "trigger": "I-asyncio\timport",
+      "contents": "import asyncio\n"
+    },
+    {
+      "trigger": "I-atexit\timport",
+      "contents": "import atexit\n"
+    },
+    {
+      "trigger": "I-builtins\timport",
+      "contents": "import builtins\n"
+    },
+    {
+      "trigger": "I-bz2\timport",
+      "contents": "import bz2\n"
+    },
+    {
+      "trigger": "I-cProfile\timport",
+      "contents": "import cProfile\n"
+    },
+    {
+      "trigger": "I-cgitb\timport",
+      "contents": "import cgitb\n"
+    },
+    {
+      "trigger": "I-collections\timport",
+      "contents": "import collections\n"
+    },
+    {
+      "trigger": "I-configparser\timport",
+      "contents": "import configparser\n"
+    },
+    {
+      "trigger": "I-contextlib\timport",
+      "contents": "import contextlib\n"
+    },
+    {
+      "trigger": "I-cookielib\timport",
+      "contents": "import cookielib\n"
+    },
+    {
+      "trigger": "I-copy_reg\timport",
+      "contents": "import copy_reg\n"
+    },
+    {
+      "trigger": "I-copyreg\timport",
+      "contents": "import copyreg\n"
+    },
+    {
+      "trigger": "I-csv\timport",
+      "contents": "import csv\n"
+    },
+    {
+      "trigger": "I-ctypes\timport",
+      "contents": "import ctypes\n"
+    },
+    {
+      "trigger": "I-datetime\timport",
+      "contents": "import datetime\n"
+    },
+    {
+      "trigger": "I-dbm_io\timport",
+      "contents": "import dbm.io\n"
+    },
+    {
+      "trigger": "I-dbm_ndbm\timport",
+      "contents": "import dbm.ndbm\n"
+    },
+    {
+      "trigger": "I-dbm _os\timport",
+      "contents": "import dbm.os\n"
+    },
+    {
+      "trigger": "I-dbm_struct\timport",
+      "contents": "import dbm.struct\n"
+    },
+    {
+      "trigger": "I-dbm_sys\timport",
+      "contents": "import dbm.sys\n"
+    },
+    {
+      "trigger": "I-dbm_whichdb\timport",
+      "contents": "import dbm.whichdb\n"
+    },
+    {
+      "trigger": "I-decimal\timport",
+      "contents": "import decimal\n"
+    },
+    {
+      "trigger": "I-difflib\timport",
+      "contents": "import difflib\n"
+    },
+    {
+      "trigger": "I-dummy_thread\timport",
+      "contents": "import dummy_thread\n"
+    },
+    {
+      "trigger": "I-dummy_threading\timport",
+      "contents": "import dummy_threading\n"
+    },
+    {
+      "trigger": "I-email\timport",
+      "contents": "import email\n"
+    },
+    {
+      "trigger": "I-faulthandler\timport",
+      "contents": "import faulthandler\n"
+    },
+    {
+      "trigger": "I-fractions\timport",
+      "contents": "import fractions\n"
+    },
+    {
+      "trigger": "I-functools\timport",
+      "contents": "import functools\n"
+    },
+    {
+      "trigger": "I-future_builtins\timport",
+      "contents": "import future_builtins\n"
+    },
+    {
+      "trigger": "I-hashlib\timport",
+      "contents": "import hashlib\n"
+    },
+    {
+      "trigger": "I-heapq\timport",
+      "contents": "import heapq\n"
+    },
+    {
+      "trigger": "I-hmac\timport",
+      "contents": "import hmac\n"
+    },
+    {
+      "trigger": "I-hotshot\timport",
+      "contents": "import hotshot\n"
+    },
+    {
+      "trigger": "I-html\timport",
+      "contents": "import html\n"
+    },
+    {
+      "trigger": "I-htmlentitydefs\timport",
+      "contents": "import htmlentitydefs\n"
+    },
+    {
+      "trigger": "I-http\timport",
+      "contents": "import http\n"
+    },
+    {
+      "trigger": "I-http_cookiejar\timport",
+      "contents": "import http.cookiejar\n"
+    },
+    {
+      "trigger": "I-importlib\timport",
+      "contents": "import importlib\n"
+    },
+    {
+      "trigger": "I-inspect\timport",
+      "contents": "import inspect\n"
+    },
+    {
+      "trigger": "I-io\timport",
+      "contents": "import io\n"
+    },
+    {
+      "trigger": "I-ipaddress\timport",
+      "contents": "import ipaddress\n"
+    },
+    {
+      "trigger": "I-itertools\timport",
+      "contents": "import itertools\n"
+    },
+    {
+      "trigger": "I-json\timport",
+      "contents": "import json\n"
+    },
+    {
+      "trigger": "I-logging\timport",
+      "contents": "import logging\n"
+    },
+    {
+      "trigger": "I-markupbase\timport",
+      "contents": "import markupbase\n"
+    },
+    {
+      "trigger": "I-md5\timport",
+      "contents": "import md5\n"
+    },
+    {
+      "trigger": "I-modulefinder\timport",
+      "contents": "import modulefinder\n"
+    },
+    {
+      "trigger": "I-msilib\timport",
+      "contents": "import msilib\n"
+    },
+    {
+      "trigger": "I-multiprocessing\timport",
+      "contents": "import multiprocessing\n"
+    },
+    {
+      "trigger": "I-new\timport",
+      "contents": "import new\n"
+    },
+    {
+      "trigger": "I-numbers\timport",
+      "contents": "import numbers\n"
+    },
+    {
+      "trigger": "I-optparse\timport",
+      "contents": "import optparse\n"
+    },
+    {
+      "trigger": "I-ossaudiodev\timport",
+      "contents": "import ossaudiodev\n"
+    },
+    {
+      "trigger": "I-pickletools\timport",
+      "contents": "import pickletools\n"
+    },
+    {
+      "trigger": "I-pkgutil\timport",
+      "contents": "import pkgutil\n"
+    },
+    {
+      "trigger": "I-platform\timport",
+      "contents": "import platform\n"
+    },
+    {
+      "trigger": "I-pydoc\timport",
+      "contents": "import pydoc\n"
+    },
+    {
+      "trigger": "I-queue\timport",
+      "contents": "import queue\n"
+    },
+    {
+      "trigger": "I-repr\timport",
+      "contents": "import repr\n"
+    },
+    {
+      "trigger": "I-reprlib\timport",
+      "contents": "import reprlib\n"
+    },
+    {
+      "trigger": "I-runpy\timport",
+      "contents": "import runpy\n"
+    },
+    {
+      "trigger": "I-secrets\timport",
+      "contents": "import secrets\n"
+    },
+    {
+      "trigger": "I-sets\timport",
+      "contents": "import sets\n"
+    },
+    {
+      "trigger": "I-shlex\timport",
+      "contents": "import shlex\n"
+    },
+    {
+      "trigger": "I-socketserver\timport",
+      "contents": "import socketserver\n"
+    },
+    {
+      "trigger": "I-spwd\timport",
+      "contents": "import spwd\n"
+    },
+    {
+      "trigger": "I-sqlite3\timport",
+      "contents": "import sqlite3\n"
+    },
+    {
+      "trigger": "I-ssl\timport",
+      "contents": "import ssl\n"
+    },
+    {
+      "trigger": "I-string_letters\timport",
+      "contents": "import string.letters\n"
+    },
+    {
+      "trigger": "I-string_lowercase\timport",
+      "contents": "import string.lowercase\n"
+    },
+    {
+      "trigger": "I-string_uppercase\timport",
+      "contents": "import string.uppercase\n"
+    },
+    {
+      "trigger": "I-stringprep\timport",
+      "contents": "import stringprep\n"
+    },
+    {
+      "trigger": "I-subprocess\timport",
+      "contents": "import subprocess\n"
+    },
+    {
+      "trigger": "I-sysconfig\timport",
+      "contents": "import sysconfig\n"
+    },
+    {
+      "trigger": "I-tarfile\timport",
+      "contents": "import tarfile\n"
+    },
+    {
+      "trigger": "I-textwrap\timport",
+      "contents": "import textwrap\n"
+    },
+    {
+      "trigger": "I-timeit\timport",
+      "contents": "import timeit\n"
+    },
+    {
+      "trigger": "I-tkinter\timport",
+      "contents": "import tkinter\n"
+    },
+    {
+      "trigger": "I-tracemalloc\timport",
+      "contents": "import tracemalloc\n"
+    },
+    {
+      "trigger": "I-typing\timport",
+      "contents": "import typing\n"
+    },
+    {
+      "trigger": "I-unittest\timport",
+      "contents": "import unittest\n"
+    },
+    {
+      "trigger": "I-urllib2\timport",
+      "contents": "import urllib2\n"
+    },
+    {
+      "trigger": "I-uuid\timport",
+      "contents": "import uuid\n"
+    },
+    {
+      "trigger": "I-warnings\timport",
+      "contents": "import warnings\n"
+    },
+    {
+      "trigger": "I-weakref\timport",
+      "contents": "import weakref\n"
+    },
+    {
+      "trigger": "I-winreg\timport",
+      "contents": "import winreg\n"
+    },
+    {
+      "trigger": "I-xmlrpc\timport",
+      "contents": "import xmlrpc\n"
+    },
+    {
+      "trigger": "I-xmlrpc_client\timport",
+      "contents": "import xmlrpc.client\n"
+    },
+    {
+      "trigger": "I-xmlrpc_server\timport",
+      "contents": "import xmlrpc.server\n"
+    },
+  ]
+}
