@@ -22,6 +22,7 @@
 		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeLinter-annotations",
+		"SublimeLinter-bandit",
 		"SublimeLinter-cppcheck",
 		"SublimeLinter-flake8",
 		"SublimeLinter-json",
