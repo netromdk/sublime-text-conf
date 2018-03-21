@@ -25,6 +25,7 @@
 		"SublimeLinter-cppcheck",
 		"SublimeLinter-flake8",
 		"SublimeLinter-json",
+		"SublimeLinter-php",
 		"Terminal",
 		"Theme - Spacegray",
 		"Transpose Word"
