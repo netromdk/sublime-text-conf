@@ -3,8 +3,11 @@
   "paths": {
         "linux": [],
         "osx": [
+          "/Users/netrom/git/cppcheck",
           "/opt/local/Library/Frameworks/Python.framework/Versions/3.5/bin",
-          "/opt/local/Library/Frameworks/Python.framework/Versions/3.6/bin"
+          "/opt/local/Library/Frameworks/Python.framework/Versions/3.6/bin",
+          "/usr/local/bin",
+          "/opt/local/bin",
         ],
         "windows": []
     },
