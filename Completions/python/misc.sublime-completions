@@ -1,0 +1,21 @@
+{
+  "scope": "source.python",
+  "completions": [
+    {
+      "trigger": "with\twith .. as ..", 
+      "contents": "with $1 as $2:\n\t$0"
+    },
+    {
+      "trigger": "listcomp\tlist comprehension", 
+      "contents": "[${1:elm} for ${2:elm} in ${3:sequence}]"
+    },
+    {
+      "trigger": "setcomp\tset comprehension", 
+      "contents": "{${1:elm} for ${2:elm} in ${3:sequence}}"
+    },
+    {
+      "trigger": "gencomp\tgenerator comprehension", 
+      "contents": "(${1:elm} for ${2:elm} in ${3:sequence})"
+    },
+  ]
+}
