@@ -17,5 +17,9 @@
       "trigger": "gencomp\tgenerator comprehension", 
       "contents": "(${1:elm} for ${2:elm} in ${3:sequence})"
     },
+    {
+      "trigger": "format\tformat expr",
+      "contents": "\"$1\".format($2)"
+    }
   ]
 }
