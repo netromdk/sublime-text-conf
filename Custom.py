@@ -2,7 +2,7 @@ import sublime_plugin
 import re
 from sublime import Region
 
-from .utils import guard_path_to_root
+from .utils import guard_path_to_root, reset_viewport_to_left
 
 WS_RE = re.compile("(\\s)+")
 
@@ -125,6 +125,9 @@ class SmartBeginningOfLineCommand(sublime_plugin.TextCommand):
     new_reg = Region(new_pos)
     sel.subtract(region)
     sel.add(new_reg)
+
+    # Make sure the region is visible if there's horizontal scroll.
+    reset_viewport_to_left(self.view)
 
 class InsertCppIncludeGuardCommand(sublime_plugin.TextCommand):
   """Inserts C++ include guard."""

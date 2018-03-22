@@ -17,3 +17,7 @@ def guard_path_to_root(path):
     if len(set(listdir(path)).intersection(VC_FILES)) > 0:
       break
   return "_".join(elms)
+
+def reset_viewport_to_left(view):
+  pos_y = view.viewport_position()[1]
+  view.set_viewport_position((0.0, pos_y))
