@@ -205,5 +205,89 @@
       "trigger": "I-vector\tinc", 
       "contents": "#include <vector>\n"
     },
+    {
+      "trigger": "I-cassert\tinc", 
+      "contents": "#include <cassert>\n"
+    },
+    {
+      "trigger": "I-cstdlib\tinc", 
+      "contents": "#include <cstdlib>\n"
+    },
+    {
+      "trigger": "I-csignal\tinc", 
+      "contents": "#include <csignal>\n"
+    },
+    {
+      "trigger": "I-csetjmp\tinc", 
+      "contents": "#include <csetjmp>\n"
+    },
+    {
+      "trigger": "I-cstdarg\tinc", 
+      "contents": "#include <cstdarg>\n"
+    },
+    {
+      "trigger": "I-ctime\tinc", 
+      "contents": "#include <ctime>\n"
+    },
+    {
+      "trigger": "I-cstddef\tinc", 
+      "contents": "#include <cstddef>\n"
+    },
+    {
+      "trigger": "I-climits\tinc", 
+      "contents": "#include <climits>\n"
+    },
+    {
+      "trigger": "I-cfloatt\tinc", 
+      "contents": "#include <cfloatt>\n"
+    },
+    {
+      "trigger": "I-cstdint\tinc", 
+      "contents": "#include <cstdint>\n"
+    },
+    {
+      "trigger": "I-cinttypes\tinc", 
+      "contents": "#include <cinttypes>\n"
+    },
+    {
+      "trigger": "I-cerrno\tinc", 
+      "contents": "#include <cerrno>\n"
+    },
+    {
+      "trigger": "I-cctype\tinc", 
+      "contents": "#include <cctype>\n"
+    },
+    {
+      "trigger": "I-cwtype\tinc", 
+      "contents": "#include <cwtype>\n"
+    },
+    {
+      "trigger": "I-cstring\tinc", 
+      "contents": "#include <cstring>\n"
+    },
+    {
+      "trigger": "I-cwchar\tinc", 
+      "contents": "#include <cwchar>\n"
+    },
+    {
+      "trigger": "I-cuchar\tinc", 
+      "contents": "#include <cuchar>\n"
+    },
+    {
+      "trigger": "I-cmath\tinc", 
+      "contents": "#include <cmath>\n"
+    },
+    {
+      "trigger": "I-cfenv\tinc", 
+      "contents": "#include <cfenv>\n"
+    },
+    {
+      "trigger": "I-cstdio\tinc", 
+      "contents": "#include <cstdio>\n"
+    },
+    {
+      "trigger": "I-clocale\tinc", 
+      "contents": "#include <clocale>\n"
+    },
   ]
 }
