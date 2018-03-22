@@ -3,291 +3,291 @@
   "completions": [
     {
       "trigger": "I-algorithm\tinc", 
-      "contents": "#include <algorithm>\n"
+      "contents": "#include <algorithm>"
     },
     {
       "trigger": "I-array\tinc", 
-      "contents": "#include <array>\n"
+      "contents": "#include <array>"
     },
     {
       "trigger": "I-atomic\tinc", 
-      "contents": "#include <atomic>\n"
+      "contents": "#include <atomic>"
     },
     {
       "trigger": "I-bitset\tinc", 
-      "contents": "#include <bitset>\n"
+      "contents": "#include <bitset>"
     },
     {
       "trigger": "I-chrono\tinc", 
-      "contents": "#include <chrono>\n"
+      "contents": "#include <chrono>"
     },
     {
       "trigger": "I-codecvt\tinc", 
-      "contents": "#include <codecvt>\n"
+      "contents": "#include <codecvt>"
     },
     {
       "trigger": "I-complex\tinc", 
-      "contents": "#include <complex>\n"
+      "contents": "#include <complex>"
     },
     {
       "trigger": "I-condition_variable\tinc", 
-      "contents": "#include <condition_variable>\n"
+      "contents": "#include <condition_variable>"
     },
     {
       "trigger": "I-deque\tinc", 
-      "contents": "#include <deque>\n"
+      "contents": "#include <deque>"
     },
     {
       "trigger": "I-exception\tinc", 
-      "contents": "#include <exception>\n"
+      "contents": "#include <exception>"
     },
     {
       "trigger": "I-forward_list\tinc", 
-      "contents": "#include <forward_list>\n"
+      "contents": "#include <forward_list>"
     },
     {
       "trigger": "I-fstream\tinc", 
-      "contents": "#include <fstream>\n"
+      "contents": "#include <fstream>"
     },
     {
       "trigger": "I-functional\tinc", 
-      "contents": "#include <functional>\n"
+      "contents": "#include <functional>"
     },
     {
       "trigger": "I-future\tinc", 
-      "contents": "#include <future>\n"
+      "contents": "#include <future>"
     },
     {
       "trigger": "I-initializer_list\tinc", 
-      "contents": "#include <initializer_list>\n"
+      "contents": "#include <initializer_list>"
     },
     {
       "trigger": "I-iomanip\tinc", 
-      "contents": "#include <iomanip>\n"
+      "contents": "#include <iomanip>"
     },
     {
       "trigger": "I-ios\tinc", 
-      "contents": "#include <ios>\n"
+      "contents": "#include <ios>"
     },
     {
       "trigger": "I-iosfwd\tinc", 
-      "contents": "#include <iosfwd>\n"
+      "contents": "#include <iosfwd>"
     },
     {
       "trigger": "I-iostream\tinc", 
-      "contents": "#include <iostream>\n"
+      "contents": "#include <iostream>"
     },
     {
       "trigger": "I-istream\tinc", 
-      "contents": "#include <istream>\n"
+      "contents": "#include <istream>"
     },
     {
       "trigger": "I-iterator\tinc", 
-      "contents": "#include <iterator>\n"
+      "contents": "#include <iterator>"
     },
     {
       "trigger": "I-limits\tinc", 
-      "contents": "#include <limits>\n"
+      "contents": "#include <limits>"
     },
     {
       "trigger": "I-list\tinc", 
-      "contents": "#include <list>\n"
+      "contents": "#include <list>"
     },
     {
       "trigger": "I-locale\tinc", 
-      "contents": "#include <locale>\n"
+      "contents": "#include <locale>"
     },
     {
       "trigger": "I-map\tinc", 
-      "contents": "#include <map>\n"
+      "contents": "#include <map>"
     },
     {
       "trigger": "I-memory\tinc", 
-      "contents": "#include <memory>\n"
+      "contents": "#include <memory>"
     },
     {
       "trigger": "I-mutex\tinc", 
-      "contents": "#include <mutex>\n"
+      "contents": "#include <mutex>"
     },
     {
       "trigger": "I-new\tinc", 
-      "contents": "#include <new>\n"
+      "contents": "#include <new>"
     },
     {
       "trigger": "I-numeric\tinc", 
-      "contents": "#include <numeric>\n"
+      "contents": "#include <numeric>"
     },
     {
       "trigger": "I-ostream\tinc", 
-      "contents": "#include <ostream>\n"
+      "contents": "#include <ostream>"
     },
     {
       "trigger": "I-queue\tinc", 
-      "contents": "#include <queue>\n"
+      "contents": "#include <queue>"
     },
     {
       "trigger": "I-random\tinc", 
-      "contents": "#include <random>\n"
+      "contents": "#include <random>"
     },
     {
       "trigger": "I-ratio\tinc", 
-      "contents": "#include <ratio>\n"
+      "contents": "#include <ratio>"
     },
     {
       "trigger": "I-regex\tinc", 
-      "contents": "#include <regex>\n"
+      "contents": "#include <regex>"
     },
     {
       "trigger": "I-set\tinc", 
-      "contents": "#include <set>\n"
+      "contents": "#include <set>"
     },
     {
       "trigger": "I-sstream\tinc", 
-      "contents": "#include <sstream>\n"
+      "contents": "#include <sstream>"
     },
     {
       "trigger": "I-stack\tinc", 
-      "contents": "#include <stack>\n"
+      "contents": "#include <stack>"
     },
     {
       "trigger": "I-stdexcept\tinc", 
-      "contents": "#include <stdexcept>\n"
+      "contents": "#include <stdexcept>"
     },
     {
       "trigger": "I-streambuf\tinc", 
-      "contents": "#include <streambuf>\n"
+      "contents": "#include <streambuf>"
     },
     {
       "trigger": "I-string\tinc", 
-      "contents": "#include <string>\n"
+      "contents": "#include <string>"
     },
     {
       "trigger": "I-system_error\tinc", 
-      "contents": "#include <system_error>\n"
+      "contents": "#include <system_error>"
     },
     {
       "trigger": "I-thread\tinc", 
-      "contents": "#include <thread>\n"
+      "contents": "#include <thread>"
     },
     {
       "trigger": "I-tuple\tinc", 
-      "contents": "#include <tuple>\n"
+      "contents": "#include <tuple>"
     },
     {
       "trigger": "I-type_traits\tinc", 
-      "contents": "#include <type_traits>\n"
+      "contents": "#include <type_traits>"
     },
     {
       "trigger": "I-typeindex\tinc", 
-      "contents": "#include <typeindex>\n"
+      "contents": "#include <typeindex>"
     },
     {
       "trigger": "I-typeinfo\tinc", 
-      "contents": "#include <typeinfo>\n"
+      "contents": "#include <typeinfo>"
     },
     {
       "trigger": "I-unordered_map\tinc", 
-      "contents": "#include <unordered_map>\n"
+      "contents": "#include <unordered_map>"
     },
     {
       "trigger": "I-unordered_set\tinc", 
-      "contents": "#include <unordered_set>\n"
+      "contents": "#include <unordered_set>"
     },
     {
       "trigger": "I-utility\tinc", 
-      "contents": "#include <utility>\n"
+      "contents": "#include <utility>"
     },
     {
       "trigger": "I-valarray\tinc", 
-      "contents": "#include <valarray>\n"
+      "contents": "#include <valarray>"
     },
     {
       "trigger": "I-vector\tinc", 
-      "contents": "#include <vector>\n"
+      "contents": "#include <vector>"
     },
     {
       "trigger": "I-cassert\tinc", 
-      "contents": "#include <cassert>\n"
+      "contents": "#include <cassert>"
     },
     {
       "trigger": "I-cstdlib\tinc", 
-      "contents": "#include <cstdlib>\n"
+      "contents": "#include <cstdlib>"
     },
     {
       "trigger": "I-csignal\tinc", 
-      "contents": "#include <csignal>\n"
+      "contents": "#include <csignal>"
     },
     {
       "trigger": "I-csetjmp\tinc", 
-      "contents": "#include <csetjmp>\n"
+      "contents": "#include <csetjmp>"
     },
     {
       "trigger": "I-cstdarg\tinc", 
-      "contents": "#include <cstdarg>\n"
+      "contents": "#include <cstdarg>"
     },
     {
       "trigger": "I-ctime\tinc", 
-      "contents": "#include <ctime>\n"
+      "contents": "#include <ctime>"
     },
     {
       "trigger": "I-cstddef\tinc", 
-      "contents": "#include <cstddef>\n"
+      "contents": "#include <cstddef>"
     },
     {
       "trigger": "I-climits\tinc", 
-      "contents": "#include <climits>\n"
+      "contents": "#include <climits>"
     },
     {
       "trigger": "I-cfloatt\tinc", 
-      "contents": "#include <cfloatt>\n"
+      "contents": "#include <cfloatt>"
     },
     {
       "trigger": "I-cstdint\tinc", 
-      "contents": "#include <cstdint>\n"
+      "contents": "#include <cstdint>"
     },
     {
       "trigger": "I-cinttypes\tinc", 
-      "contents": "#include <cinttypes>\n"
+      "contents": "#include <cinttypes>"
     },
     {
       "trigger": "I-cerrno\tinc", 
-      "contents": "#include <cerrno>\n"
+      "contents": "#include <cerrno>"
     },
     {
       "trigger": "I-cctype\tinc", 
-      "contents": "#include <cctype>\n"
+      "contents": "#include <cctype>"
     },
     {
       "trigger": "I-cwtype\tinc", 
-      "contents": "#include <cwtype>\n"
+      "contents": "#include <cwtype>"
     },
     {
       "trigger": "I-cstring\tinc", 
-      "contents": "#include <cstring>\n"
+      "contents": "#include <cstring>"
     },
     {
       "trigger": "I-cwchar\tinc", 
-      "contents": "#include <cwchar>\n"
+      "contents": "#include <cwchar>"
     },
     {
       "trigger": "I-cuchar\tinc", 
-      "contents": "#include <cuchar>\n"
+      "contents": "#include <cuchar>"
     },
     {
       "trigger": "I-cmath\tinc", 
-      "contents": "#include <cmath>\n"
+      "contents": "#include <cmath>"
     },
     {
       "trigger": "I-cfenv\tinc", 
-      "contents": "#include <cfenv>\n"
+      "contents": "#include <cfenv>"
     },
     {
       "trigger": "I-cstdio\tinc", 
-      "contents": "#include <cstdio>\n"
+      "contents": "#include <cstdio>"
     },
     {
       "trigger": "I-clocale\tinc", 
-      "contents": "#include <clocale>\n"
+      "contents": "#include <clocale>"
     },
   ]
 }

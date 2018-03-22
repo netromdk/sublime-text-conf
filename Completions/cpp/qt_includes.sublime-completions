@@ -3,259 +3,259 @@
   "completions": [
     {
       "trigger": "I-QString\tinc",
-      "contents": "#include <QString>\n"
+      "contents": "#include <QString>"
     },
     {
       "trigger": "I-QList\tinc",
-      "contents": "#include <QList>\n"
+      "contents": "#include <QList>"
     },
     {
       "trigger": "I-QVector\tinc",
-      "contents": "#include <QVector>\n"
+      "contents": "#include <QVector>"
     },
     {
       "trigger": "I-QVariant\tinc",
-      "contents": "#include <QVariant>\n"
+      "contents": "#include <QVariant>"
     },
     {
       "trigger": "I-QVariantList\tinc",
-      "contents": "#include <QVariantList>\n"
+      "contents": "#include <QVariantList>"
     },
     {
       "trigger": "I-QVariantMap\tinc",
-      "contents": "#include <VariantMap>\n"
+      "contents": "#include <VariantMap>"
     },
     {
       "trigger": "I-QVariantHash\tinc",
-      "contents": "#include <VariantHash>\n"
+      "contents": "#include <VariantHash>"
     },
     {
       "trigger": "I-QApplication\tinc",
-      "contents": "#include <QApplication>\n"
+      "contents": "#include <QApplication>"
     },
     {
       "trigger": "I-QGuiApplication\tinc",
-      "contents": "#includeGuiApplication <Q>\n"
+      "contents": "#includeGuiApplication <Q>"
     },
     {
       "trigger": "I-QCoreApplication\tinc",
-      "contents": "#include <QCoreApplication>\n"
+      "contents": "#include <QCoreApplication>"
     },
     {
       "trigger": "I-QMap\tinc",
-      "contents": "#include <QMap>\n"
+      "contents": "#include <QMap>"
     },
     {
       "trigger": "I-QHash\tinc",
-      "contents": "#include <QHash>\n"
+      "contents": "#include <QHash>"
     },
     {
       "trigger": "I-QSet\tinc",
-      "contents": "#include <QSet>\n"
+      "contents": "#include <QSet>"
     },
     {
       "trigger": "I-QDir\tinc",
-      "contents": "#include <QDir>\n"
+      "contents": "#include <QDir>"
     },
     {
       "trigger": "I-QFile\tinc",
-      "contents": "#include <QFile>\n"
+      "contents": "#include <QFile>"
     },
     {
       "trigger": "I-QSettings\tinc",
-      "contents": "#include <QSettings>\n"
+      "contents": "#include <QSettings>"
     },
     {
       "trigger": "I-QTimer\tinc",
-      "contents": "#include <QTimer>\n"
+      "contents": "#include <QTimer>"
     },
     {
       "trigger": "I-QClipboard\tinc",
-      "contents": "#include <QClipboard>\n"
+      "contents": "#include <QClipboard>"
     },
     {
       "trigger": "I-QAction\tinc",
-      "contents": "#include <QAction>\n"
+      "contents": "#include <QAction>"
     },
     {
       "trigger": "I-QMenu\tinc",
-      "contents": "#include <QMenu>\n"
+      "contents": "#include <QMenu>"
     },
     {
       "trigger": "I-QMessageBox\tinc",
-      "contents": "#include <QMessageBox>\n"
+      "contents": "#include <QMessageBox>"
     },
     {
       "trigger": "I-QStandardPaths\tinc",
-      "contents": "#include <QStandardPaths>\n"
+      "contents": "#include <QStandardPaths>"
     },
     {
       "trigger": "I-QTranslator\tinc",
-      "contents": "#include <QTranslator>\n"
+      "contents": "#include <QTranslator>"
     },
     {
       "trigger": "I-QFileInfo\tinc",
-      "contents": "#include <QFileInfo>\n"
+      "contents": "#include <QFileInfo>"
     },
     {
       "trigger": "I-QTcpSocket\tinc",
-      "contents": "#include <QTcpSocket>\n"
+      "contents": "#include <QTcpSocket>"
     },
     {
       "trigger": "I-QUdpSocket\tinc",
-      "contents": "#include <QUdpSocket>\n"
+      "contents": "#include <QUdpSocket>"
     },
     {
       "trigger": "I-QTcpServer\tinc",
-      "contents": "#include <QTcpServer>\n"
+      "contents": "#include <QTcpServer>"
     },
     {
       "trigger": "I-QUdpServer\tinc",
-      "contents": "#include <QUdpServer>\n"
+      "contents": "#include <QUdpServer>"
     },
     {
       "trigger": "I-QSslSocket\tinc",
-      "contents": "#include <QSslSocket>\n"
+      "contents": "#include <QSslSocket>"
     },
     {
       "trigger": "I-QSslServer\tinc",
-      "contents": "#include <QSslServer>\n"
+      "contents": "#include <QSslServer>"
     },
     {
       "trigger": "I-QXmlStreamWriter\tinc",
-      "contents": "#include <QXmlStreamWriter>\n"
+      "contents": "#include <QXmlStreamWriter>"
     },
     {
       "trigger": "I-QXmlStreamReader\tinc",
-      "contents": "#include <QXmlStreamReader>\n"
+      "contents": "#include <QXmlStreamReader>"
     },
     {
       "trigger": "I-QFileDialog\tinc",
-      "contents": "#include <QFileDialog>\n"
+      "contents": "#include <QFileDialog>"
     },
     {
       "trigger": "I-QByteArray\tinc",
-      "contents": "#include <QByteArray>\n"
+      "contents": "#include <QByteArray>"
     },
     {
       "trigger": "I-QDataStream\tinc",
-      "contents": "#include <QDataStream>\n"
+      "contents": "#include <QDataStream>"
     },
     {
       "trigger": "I-QTextStream\tinc",
-      "contents": "#include <QTextStream>\n"
+      "contents": "#include <QTextStream>"
     },
     {
       "trigger": "I-QThread\tinc",
-      "contents": "#include <QThread>\n"
+      "contents": "#include <QThread>"
     },
     {
       "trigger": "I-QDebug\tinc",
-      "contents": "#include <QDebug>\n"
+      "contents": "#include <QDebug>"
     },
     {
       "trigger": "I-QUuid\tinc",
-      "contents": "#include <QUuid>\n"
+      "contents": "#include <QUuid>"
     },
     {
       "trigger": "I-QWidget\tinc",
-      "contents": "#include <QWidget>\n"
+      "contents": "#include <QWidget>"
     },
     {
       "trigger": "I-QDialog\tinc",
-      "contents": "#include <QDialog>\n"
+      "contents": "#include <QDialog>"
     },
     {
       "trigger": "I-QTemporaryFile\tinc",
-      "contents": "#include <QTemporaryFile>\n"
+      "contents": "#include <QTemporaryFile>"
     },
     {
       "trigger": "I-QTemporaryDir\tinc",
-      "contents": "#include <QTemporaryDir>\n"
+      "contents": "#include <QTemporaryDir>"
     },
     {
       "trigger": "I-QScreen\tinc",
-      "contents": "#include <QScreen>\n"
+      "contents": "#include <QScreen>"
     },
     {
       "trigger": "I-QRegularExpression\tinc",
-      "contents": "#include <QRegularExpression>\n"
+      "contents": "#include <QRegularExpression>"
     },
     {
       "trigger": "I-QRegExp\tinc",
-      "contents": "#include <QRegExp>\n"
+      "contents": "#include <QRegExp>"
     },
     {
       "trigger": "I-QProcess\tinc",
-      "contents": "#include <QProcess>\n"
+      "contents": "#include <QProcess>"
     },
     {
       "trigger": "I-QLibrary\tinc",
-      "contents": "#include <QLibrary>\n"
+      "contents": "#include <QLibrary>"
     },
     {
       "trigger": "I-QDesktopWidget\tinc",
-      "contents": "#include <QDesktopWidget>\n"
+      "contents": "#include <QDesktopWidget>"
     },
     {
       "trigger": "I-QDesktopServices\tinc",
-      "contents": "#include <QDesktopServices>\n"
+      "contents": "#include <QDesktopServices>"
     },
     {
       "trigger": "I-QTime\tinc",
-      "contents": "#include <QTime>\n"
+      "contents": "#include <QTime>"
     },
     {
       "trigger": "I-QMetaType\tinc",
-      "contents": "#include <QMetaType>\n"
+      "contents": "#include <QMetaType>"
     },
     {
       "trigger": "I-QtGlobal\tinc",
-      "contents": "#include <QtGlobal>\n"
+      "contents": "#include <QtGlobal>"
     },
     {
       "trigger": "I-QImage\tinc",
-      "contents": "#include <QImage>\n"
+      "contents": "#include <QImage>"
     },
     {
       "trigger": "I-QObject\tinc",
-      "contents": "#include <QObject>\n"
+      "contents": "#include <QObject>"
     },
     {
       "trigger": "I-QElapsedTimer\tinc",
-      "contents": "#include <QElapsedTimer>\n"
+      "contents": "#include <QElapsedTimer>"
     },
     {
       "trigger": "I-QDateTime\tinc",
-      "contents": "#include <QDateTime>\n"
+      "contents": "#include <QDateTime>"
     },
     {
       "trigger": "I-QPixmap\tinc",
-      "contents": "#include <QPixmap>\n"
+      "contents": "#include <QPixmap>"
     },
     {
       "trigger": "I-QLayout\tinc",
-      "contents": "#include <QLayout>\n"
+      "contents": "#include <QLayout>"
     },
     {
       "trigger": "I-QHBoxLayout\tinc",
-      "contents": "#include <QHBoxLayout>\n"
+      "contents": "#include <QHBoxLayout>"
     },
     {
       "trigger": "I-QVBoxLayout\tinc",
-      "contents": "#include <QVBoxLayout>\n"
+      "contents": "#include <QVBoxLayout>"
     },
     {
       "trigger": "I-QGridLayout\tinc",
-      "contents": "#include <QGridLayout>\n"
+      "contents": "#include <QGridLayout>"
     },
     {
       "trigger": "I-QFormLayout\tinc",
-      "contents": "#include <QFormLayout>\n"
+      "contents": "#include <QFormLayout>"
     },
     {
       "trigger": "I-QPair\tinc",
-      "contents": "#include <QPair>\n"
+      "contents": "#include <QPair>"
     },
   ]
 }
