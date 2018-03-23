@@ -6,6 +6,9 @@
   {"keys": ["super+<"], "command": "move_to", "args": {"to": "bof"}},
   {"keys": ["super+shift+<"], "command": "move_to", "args": {"to": "eof"}},
 
+  // When accidentally closing a file it's handy to be able to open it right away.
+  { "keys": ["super+ctrl+t"], "command": "reopen_last_file" },
+
   // Luxion related.
   { "keys": ["super+ctrl+w"], "command": "wrap_luxion_function" },
 
