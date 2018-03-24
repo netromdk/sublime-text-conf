@@ -53,5 +53,6 @@
 	"show_line_endings": true,
 	"tab_size": 2,
 	"theme": "Spacegray Eighties.sublime-theme",
-	"translate_tabs_to_spaces": true
+	"translate_tabs_to_spaces": true,
+	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?_",
 }
