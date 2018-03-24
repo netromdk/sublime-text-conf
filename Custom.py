@@ -15,7 +15,8 @@ class CycleSpacingCommand(sublime_plugin.TextCommand):
       self.__cycle_spacing(self.view, edit)
 
   def __cycle_spacing(self, view, edit):
-    for region in view.sel():
+    sel = view.sel()
+    for region in sel:
       begin = region.begin()
       line_reg = view.full_line(begin)
       line_text = view.substr(line_reg)
@@ -44,7 +45,13 @@ class CycleSpacingCommand(sublime_plugin.TextCommand):
           if line_text.endswith("\n") and not txt.endswith("\n"):
             txt += "\n"
 
-        view.replace(r=line_reg, text=txt, edit=edit)
+        # Replace the text.
+        view.replace(edit, line_reg, txt)
+
+        # Replace region so cursor appears at the right place.
+        sel.subtract(region)
+        sel.subtract(line_reg)
+        sel.add(Region(line_reg.begin() + s[0]))
         break
 
 class DeleteBlankLinesCommand(sublime_plugin.TextCommand):
