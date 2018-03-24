@@ -13,7 +13,7 @@
   { "keys": ["super+ctrl+w"], "command": "wrap_luxion_function" },
 
   // Custom related.
-  { "keys": ["super+k", "super+space"], "command": "cycle_spacing"},
+  { "keys": ["super+alt+space"], "command": "cycle_spacing"},
   { "keys": ["ctrl+x", "ctrl+o"], "command": "delete_blank_lines"},
   { "keys": ["ctrl+a"], "command": "smart_beginning_of_line"},
 
