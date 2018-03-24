@@ -17,6 +17,9 @@
   { "keys": ["ctrl+x", "ctrl+o"], "command": "delete_blank_lines"},
   { "keys": ["ctrl+a"], "command": "smart_beginning_of_line"},
 
+  // Title case "hello" -> "Hello".
+  { "keys": ["super+k", "super+c"], "command": "title_case"},
+
   // Move By Paragraph package.
 
   // Move paragraph up/down.
