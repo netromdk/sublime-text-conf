@@ -1,6 +1,8 @@
+import sublime
 import sublime_plugin
 import re
 from sublime import Region
+from time import time
 
 from .utils import guard_path_to_root, reset_viewport_to_left
 
@@ -147,3 +149,29 @@ class InsertCppIncludeGuardCommand(sublime_plugin.TextCommand):
     guard = guard_path_to_root(self.view.file_name())
     self.view.insert(edit, 0, "#ifndef {}\n#define {}\n\n".format(guard, guard))
     self.view.insert(edit, self.view.size(), "\n\n#endif // {}\n".format(guard))
+
+class LineCountUpdateListener(sublime_plugin.EventListener):
+  """Updates line count in status bar at intervals."""
+
+  def __init__(self):
+    super(LineCountUpdateListener).__init__()
+    self.__last_change = time()
+    self.__update_interval = 2.0  # s
+    self.__status_key = "line_count"
+
+  def __update_line_count(self, view):
+    line_count = view.rowcol(view.size())[0] + 1
+    view.set_status(self.__status_key, "Lines: {}".format(line_count))
+
+  def on_modified(self, view):
+    now = time()
+    if now > self.__last_change + self.__update_interval:
+      self.__last_change = now
+      interval = int(self.__update_interval * 1000)
+      sublime.set_timeout(lambda: self.__update_line_count(view), interval)
+
+  # When new buffer is created.
+  on_new = __update_line_count
+
+  # When a file finished loading.
+  on_load = __update_line_count
