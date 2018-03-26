@@ -4,7 +4,8 @@ import re
 from sublime import Region
 from time import time
 
-from .utils import guard_path_to_root, reset_viewport_to_left, line_at_pos
+from .utils import guard_path_to_root, reset_viewport_to_left, line_at_pos, line_endings_view_text,\
+  is_newline
 
 WS_RE = re.compile("(\\s)+")
 
@@ -18,6 +19,7 @@ class CycleSpacingCommand(sublime_plugin.TextCommand):
 
   def __cycle_spacing(self, view, edit):
     sel = view.sel()
+    nl = line_endings_view_text(view)
     for region in sel:
       begin = region.begin()
       line_reg = view.full_line(begin)
@@ -45,7 +47,7 @@ class CycleSpacingCommand(sublime_plugin.TextCommand):
 
           # Maintain newline at end of line.
           if line_text.endswith("\n") and not txt.endswith("\n"):
-            txt += "\n"
+            txt += nl
 
         # Replace the text.
         view.replace(edit, line_reg, txt)
@@ -64,6 +66,7 @@ class DeleteBlankLinesCommand(sublime_plugin.TextCommand):
       self.__delete_blank_lines(self.view, edit)
 
   def __delete_blank_lines(self, view, edit):
+    nl = line_endings_view_text(view)
     for region in view.sel():
       begin = region.begin()
       line_reg = view.full_line(begin)
@@ -73,7 +76,7 @@ class DeleteBlankLinesCommand(sublime_plugin.TextCommand):
       while True:
         line_up_reg = view.full_line(try_pos)
         line_text = view.substr(line_up_reg)
-        if line_text == "\n":
+        if is_newline(line_text):
           line_reg = line_up_reg
           try_pos -= 1
         else:
@@ -83,7 +86,7 @@ class DeleteBlankLinesCommand(sublime_plugin.TextCommand):
       rem = False
       while True:
         line_text = view.substr(line_reg)
-        if line_text == "\n":
+        if is_newline(line_text):
           rem = True
           view.erase(edit, line_reg)
         else:
@@ -92,7 +95,7 @@ class DeleteBlankLinesCommand(sublime_plugin.TextCommand):
       # Insert newline to give space if anything was removed but only if not at the end of the file.
       nl_pos = line_reg.begin()
       if rem and nl_pos != view.size():
-        view.insert(edit, nl_pos, "\n")
+        view.insert(edit, nl_pos, nl)
 
 class SmartBeginningOfLineCommand(sublime_plugin.TextCommand):
   """Go to first non white space on line. If that position is already the current position then move
@@ -147,8 +150,9 @@ class InsertCppIncludeGuardCommand(sublime_plugin.TextCommand):
 
   def __insert_guard(self, edit):
     guard = guard_path_to_root(self.view.file_name())
-    self.view.insert(edit, 0, "#ifndef {}\n#define {}\n\n".format(guard, guard))
-    self.view.insert(edit, self.view.size(), "\n\n#endif // {}\n".format(guard))
+    nl = line_endings_view_text(self.view)
+    self.view.insert(edit, 0, "#ifndef {}{}#define {}{}{}".format(guard, nl, guard, nl, nl))
+    self.view.insert(edit, self.view.size(), "{}{}#endif // {}{}".format(nl, nl, guard, nl))
 
 class LineCountUpdateListener(sublime_plugin.EventListener):
   """Updates line count in status bar at intervals."""

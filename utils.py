@@ -1,4 +1,5 @@
 import re
+import sublime
 from uuid import uuid4
 from os.path import split
 from os import listdir
@@ -24,3 +25,20 @@ def reset_viewport_to_left(view):
 
 def line_at_pos(pos, view):
   return view.rowcol(pos)[0]
+
+def line_endings_text(endings):
+  endings = endings.lower()
+  if endings == "unix":
+    return "\n"
+  elif endings == "windows":
+    return "\r\n"
+
+  # elif endings == "system":
+  plat = sublime.platform()
+  return line_endings_text(plat if plat == "windows" else "unix")
+
+def line_endings_view_text(view):
+  return line_endings_text(view.settings().get("default_line_ending"))
+
+def is_newline(text):
+  return text in ["\n", "\r\n"]
