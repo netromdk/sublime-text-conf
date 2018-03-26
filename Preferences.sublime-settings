@@ -42,6 +42,10 @@
 	[
 		"draw_active"
 	],
+	"keymaps":
+	{
+		"show_pretty_keys": true
+	},
 	"match_brackets_angle": true,
 	"rulers":
 	[
@@ -55,6 +59,5 @@
 	"tab_size": 2,
 	"theme": "Spacegray Eighties.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?_",
-	"keymaps": { "show_pretty_keys": true }
+	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?_"
 }
