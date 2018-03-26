@@ -16,6 +16,7 @@
   { "keys": ["super+alt+space"], "command": "cycle_spacing"},
   { "keys": ["ctrl+x", "ctrl+o"], "command": "delete_blank_lines"},
   { "keys": ["ctrl+a"], "command": "smart_beginning_of_line"},
+  { "keys": ["ctrl+l"], "command": "recenter_top_bottom"},
 
   // Title case "hello" -> "Hello".
   { "keys": ["super+k", "super+c"], "command": "title_case"},

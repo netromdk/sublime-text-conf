@@ -175,3 +175,31 @@ class LineCountUpdateListener(sublime_plugin.EventListener):
 
   # When a file finished loading.
   on_load = __update_line_count
+
+class RecenterTopBottomCommand(sublime_plugin.TextCommand):
+  """Places current line as center, top, and bottom in a cycling manner. Only works with one
+  cursor/selection."""
+
+  def run(self, edit):
+    if self.view.size() > 0 and len(self.view.sel()) == 1:
+      self.__cycle_placement()
+
+  def __cycle_placement(self):
+    view = self.view
+    cur_line = line_at_pos(view.sel()[0].begin(), view)
+    visible = view.visible_region()
+    top_line = line_at_pos(visible.begin(), view)
+    bottom_line = line_at_pos(visible.end(), view)
+    half_lines = (bottom_line - top_line) // 2
+    center_line = top_line + half_lines
+
+    # Cycle between center, top, and bottom.
+    if cur_line == center_line:
+      choice = center_line + half_lines - 1  # Subract one to be visible.
+    elif cur_line >= top_line - 1 and cur_line <= top_line + 1:
+      choice = center_line - (half_lines * 2) + 2  # Add two to be visible.
+    else:
+      choice = cur_line
+
+    # Set centered line from result.
+    view.show_at_center(view.text_point(choice, 0))

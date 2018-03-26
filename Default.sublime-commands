@@ -26,4 +26,8 @@
     "caption": "Custom: Insert C++ include guard",
     "command": "insert_cpp_include_guard"
   },
+  {
+    "caption": "Custom: Recenter/top/bottom",
+    "command": "recenter_top_bottom"
+  },
 ]
