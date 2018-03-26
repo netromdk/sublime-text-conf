@@ -4,7 +4,7 @@ import re
 from sublime import Region
 from time import time
 
-from .utils import guard_path_to_root, reset_viewport_to_left
+from .utils import guard_path_to_root, reset_viewport_to_left, line_at_pos
 
 WS_RE = re.compile("(\\s)+")
 
@@ -160,7 +160,7 @@ class LineCountUpdateListener(sublime_plugin.EventListener):
     self.__status_key = "custom_line_count"
 
   def __update_line_count(self, view):
-    line_count = view.rowcol(view.size())[0] + 1
+    line_count = line_at_pos(view.size(), view) + 1
     view.set_status(self.__status_key, "Lines: {}".format(line_count))
 
   def on_modified(self, view):

@@ -21,3 +21,6 @@ def guard_path_to_root(path):
 def reset_viewport_to_left(view):
   pos_y = view.viewport_position()[1]
   view.set_viewport_position((0.0, pos_y))
+
+def line_at_pos(pos, view):
+  return view.rowcol(pos)[0]
