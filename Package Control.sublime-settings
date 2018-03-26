@@ -27,6 +27,7 @@
 		"SublimeLinter",
 		"SublimeLinter-annotations",
 		"SublimeLinter-bandit",
+		"SublimeLinter-contrib-yamllint",
 		"SublimeLinter-cppcheck",
 		"SublimeLinter-flake8",
 		"SublimeLinter-json",
