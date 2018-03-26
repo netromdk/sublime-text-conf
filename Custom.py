@@ -155,9 +155,9 @@ class LineCountUpdateListener(sublime_plugin.EventListener):
 
   def __init__(self):
     super(LineCountUpdateListener).__init__()
-    self.__last_change = time()
+    self.__last_change = 0  # Start at "never".
     self.__update_interval = 2.0  # s
-    self.__status_key = "line_count"
+    self.__status_key = "custom_line_count"
 
   def __update_line_count(self, view):
     line_count = view.rowcol(view.size())[0] + 1
