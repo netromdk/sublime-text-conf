@@ -20,6 +20,9 @@
   // Title case "hello" -> "Hello".
   { "keys": ["super+k", "super+c"], "command": "title_case"},
 
+  // Show "Build Results" panel, which doesn't have a binding by default.
+  { "keys": ["super+alt+b"], "command": "show_panel", "args": {"panel": "output.exec"} },
+
   // Move By Paragraph package.
 
   // Move paragraph up/down.
