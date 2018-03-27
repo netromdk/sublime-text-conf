@@ -1,0 +1,44 @@
+%YAML 1.2
+---
+# See http://www.sublimetext.com/docs/3/syntax.html
+file_extensions:
+  - log
+scope: text.ksnr-log
+contexts:
+  main:
+    # Strings begin and end with quotes, and use backslashes as an escape
+    # character.
+    - match: '"'
+      scope: punctuation.definition.string.begin.ksnr-log
+      push: double_quoted_string
+
+    # Message types: debug and info are normal but warnings+ are marked to be
+    # visible.
+    - match: '\b(DD|II)\b'
+      scope: variable.parameter.ksnr-log
+    - match: '\b(WW|EE|TT)\b'
+      scope: invalid.illegal.ksnr-log
+
+    # Numbers.
+    - match: '\b(-)?[0-9.]+\b'
+      scope: constant.numeric.ksnr-log
+
+    # Date/time.
+    - match: '\b(\w+\s\w+\s\d+\s\d+:\d+:\d+\s\d+)\b'
+      scope: keyword.control.ksnr-log
+
+    # Delimeters.
+    - match: '[:\(\)\[\]\-,;]'
+      scope: constant.numeric.ksnr-log
+
+    # true/false.
+    - match: '\b(true|false)\b'
+      scope: constant.language.ksnr-log
+
+  double_quoted_string:
+    - meta_scope: string.quoted.double.ksnr-log
+    - match: '\\.'
+      scope: constant.character.escape.ksnr-log
+    - match: '"'
+      scope: punctuation.definition.string.end.ksnr-log
+      pop: true
