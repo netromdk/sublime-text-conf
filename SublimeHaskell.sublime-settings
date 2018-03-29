@@ -1,0 +1,8 @@
+{
+  "add_to_PATH": [
+    "~/Library/Haskell/bin/"
+  ],
+
+  // Add my custom completions, too!
+  "add_default_completions": true,
+}
