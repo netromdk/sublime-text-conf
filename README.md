@@ -9,3 +9,5 @@ To make sure the SublimeLinter linters work, and extra things, install the follo
 * cppcheck
 * php
 * `sudo -H pip install --upgrade --pre CodeIntel`
+* ghc
+* `cabal install hsdev-0.2.5.1 ghc-mod`
