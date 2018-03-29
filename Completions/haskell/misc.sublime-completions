@@ -1,0 +1,9 @@
+{
+  "scope": "source.haskell",
+  "completions": [
+    {
+      "trigger": "module\tmodule X (..) where ..", 
+      "contents": "module ${1:Name} (${2:\n\t${3:export}\n}) where"
+    },
+  ]
+}
