@@ -1,5 +1,6 @@
 // SublimeLinter Settings - User
 {
+  "debug": false,
   "paths": {
         "linux": [],
         "osx": [
@@ -23,7 +24,7 @@
         "--language", "c++",
         "--std", "c++11",
       ]
-    }
+    },
   },
 
   // Using "Edge Theme Addon - Linter Theme".
