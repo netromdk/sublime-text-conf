@@ -5,4 +5,8 @@
 
   // Add my custom completions, too!
   "add_default_completions": true,
+
+  "ghc_opts": [
+    "-fno-warn-unused-binds", 
+  ],
 }
