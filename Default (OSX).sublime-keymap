@@ -39,6 +39,13 @@
   // SublimeLinter package: Add key-binding for show line errors.
   { "keys": ["super+ctrl+shift+l"], "command": "sublime_linter_line_report" },
 
+  // SublimeHaskell package.
+  {
+    "keys": ["super+alt+h"],
+    "command": "show_panel",
+    "args": { "panel": "output.sublime_haskell_output_panel" }
+  },
+
   // Clang Format package: Change default key-bindings.
   // cmd+alt+f -> format selection
   // cmd+alt+shift+f -> format whole buffer

@@ -9,4 +9,7 @@
   "ghc_opts": [
     "-fno-warn-unused-binds", 
   ],
+
+  // Don't show error/warning panel on save.
+  "show_error_window": false,
 }
