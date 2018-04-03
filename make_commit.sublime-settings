@@ -1,0 +1,5 @@
+// Override settings for make_commit syntax-specific.
+{
+  "rulers": [100],
+  "word_wrap": false,
+}
