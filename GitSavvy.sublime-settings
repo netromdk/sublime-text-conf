@@ -17,4 +17,5 @@
   "pedantic_commit": true,
   "pedantic_commit_ruler": false,
   "pedantic_commit_first_line_length": 80,
+  "pedantic_commit_message_line_length": 100,
 }
