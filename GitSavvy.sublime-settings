@@ -14,4 +14,7 @@
   "enable_branch_descriptions": false,
   "hide_help_menu": true,
   "graph_show_more_commit_info": false,
+  "pedantic_commit": true,
+  "pedantic_commit_ruler": false,
+  "pedantic_commit_first_line_length": 80,
 }
