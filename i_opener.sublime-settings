@@ -1,4 +1,4 @@
 {
-  // Whether or not to consider the project's directory when choosing a path at which to start
-  "use_project_dir": true,
+  // Don't consider project dir because it means it won't use current dir of folder!
+  "use_project_dir": false,
 }
