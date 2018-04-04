@@ -10,14 +10,12 @@
     "-fno-warn-unused-binds", 
   ],
 
-  // Don't show error/warning panel on save.
-  "show_error_window": false,
-
   "prettify_on_save": true,
-  "prettify_executable": "hindent",
-  "hindent_options": [
-    "--line-length", "100",
-    "--indent-size", "2",
-    "--sort-imports",
-  ],
+  "prettify_executable": "stylish-haskell",
+  // "prettify_executable": "hindent",
+  // "hindent_options": [
+  //   "--line-length", "100",
+  //   "--indent-size", "2",
+  //   "--sort-imports",
+  // ],
 }
