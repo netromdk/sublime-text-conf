@@ -8,6 +8,7 @@
 
   "ghc_opts": [
     "-fno-warn-unused-binds", 
+    "-fno-warn-missing-signatures"
   ],
 
   "prettify_on_save": true,
