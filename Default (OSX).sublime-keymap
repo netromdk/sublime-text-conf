@@ -46,6 +46,9 @@
     "args": { "panel": "output.sublime_haskell_output_panel" }
   },
 
+  // SourceTree package.
+  { "keys": ["super+."], "command": "sourcetree_open" },
+
   // Clang Format package: Change default key-bindings.
   // cmd+alt+f -> format selection
   // cmd+alt+shift+f -> format whole buffer
