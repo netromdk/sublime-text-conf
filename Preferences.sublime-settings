@@ -29,7 +29,7 @@
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
 	"draw_indent_guides": true,
-	"draw_white_space": "all",
+	"draw_white_space": "selection",
 	"ensure_newline_at_eof_on_save": true,
 	"find_selected_text": true,
 	"font_size": 12,
