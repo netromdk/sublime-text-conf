@@ -1,0 +1,37 @@
+[
+	{
+		"args":
+		{
+			"file": "res://Packages/Default/Delete Line.sublime-macro"
+		},
+		"command": "run_macro_file"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"extend": true,
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args": null,
+		"command": "wrap_luxion_function"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"file": "res://Packages/Default/Delete Line.sublime-macro"
+		},
+		"command": "run_macro_file"
+	}
+]
