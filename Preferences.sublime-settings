@@ -34,6 +34,7 @@
 	"find_selected_text": true,
 	"font_size": 12,
 	"highlight_modified_tabs": true,
+  "highlight_trailing_whitespace": true,
 	"ignored_packages":
 	[
 		"Vintage"
