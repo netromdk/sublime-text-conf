@@ -1,4 +1,8 @@
 // GitGutter Settings - User
 {
+  // Show diff in popup and not only the old state.
   "diff_popup_default_mode": "diff",
+
+  // Show in minimap with a wider outline to make it easier to spot.
+  "show_in_minimap": 5,
 }
