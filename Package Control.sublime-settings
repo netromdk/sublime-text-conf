@@ -20,7 +20,6 @@
 		"GitGutter",
 		"GitSavvy",
 		"HexViewer",
-		"Highlight Trailing Whitespace",
 		"HoogleSearch",
 		"INI",
 		"iOpener",
@@ -52,6 +51,7 @@
 		"SyncedSideBar",
 		"Terminal",
 		"Theme - Spacegray",
+		"TrailingSpaces",
 		"Transpose Word"
 	]
 }
