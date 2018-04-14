@@ -1,0 +1,4 @@
+{
+  "shell_cmd": "~/.local/bin/stack test",
+  "working_dir": "${project_path}",
+}
