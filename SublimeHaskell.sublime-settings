@@ -8,9 +8,13 @@
   "add_default_completions": true,
 
   "ghc_opts": [
-    "-fno-warn-unused-binds", 
+    "-fno-warn-unused-binds",
     "-fno-warn-missing-signatures"
   ],
+
+  "enable_auto_build": false,
+  "enable_auto_check": true,
+  "enable_auto_lint": true,
 
   "prettify_on_save": true,
   "prettify_executable": "stylish-haskell",
