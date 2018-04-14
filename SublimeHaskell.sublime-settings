@@ -1,5 +1,6 @@
 {
   "add_to_PATH": [
+    "~/.local/bin",
     "~/Library/Haskell/bin/"
   ],
 

@@ -5,6 +5,7 @@
 	],
 	"additional_path_items":
 	[
+		"~/.local/bin/",
 		"/usr/local/bin/",
 		"/opt/local/bin/"
 	],
