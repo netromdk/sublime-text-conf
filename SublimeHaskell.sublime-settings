@@ -12,9 +12,10 @@
     "-fno-warn-missing-signatures"
   ],
 
+  // Don't do auto stuff since it is often wrong and annoying.
   "enable_auto_build": false,
-  "enable_auto_check": true,
-  "enable_auto_lint": true,
+  "enable_auto_check": false,
+  "enable_auto_lint": false,
 
   "prettify_on_save": true,
   "prettify_executable": "stylish-haskell",
