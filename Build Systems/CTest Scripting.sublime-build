@@ -1,5 +1,5 @@
 {
-  "shell_cmd": "ctest -L scripting --output-on-failure -j 666",
+  "shell_cmd": "cmake --build . --target kscripting && cmake --build . --target testbb_scripting && ctest -L scripting --output-on-failure -j 666",
   "working_dir": "${project_path}",
   "path": "$PATH:/usr/local/bin/:/opt/local/bin/"
 }
