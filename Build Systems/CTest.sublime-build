@@ -1,5 +1,6 @@
+// Run all tests except those requiring a local installation, like alias importers etc.
 {
-  "shell_cmd": "cmake --build . && ctest --output-on-failure -j 666",
+  "shell_cmd": "cmake --build . && ctest -LE requires-install --output-on-failure -j 666",
   "working_dir": "${project_path}",
   "path": "$PATH:/usr/local/bin/:/opt/local/bin/"
 }
