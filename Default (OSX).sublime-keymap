@@ -9,6 +9,14 @@
   // When accidentally closing a file it's handy to be able to open it right away.
   { "keys": ["super+ctrl+t"], "command": "reopen_last_file" },
 
+  // Fix ctrl+k to always delete to EOL, otherwise it would be hijacked by some plugins, like
+  // SublimeHaskell.
+  {
+    "keys": ["ctrl+k"],
+    "command": "run_macro_file",
+    "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"}
+  },
+
   // Luxion related.
   { "keys": ["super+ctrl+w"], "command": "wrap_luxion_function" },
 
