@@ -23,11 +23,11 @@
     },
     {
       "trigger": "I-QVariantMap\tinc",
-      "contents": "#include <VariantMap>"
+      "contents": "#include <QVariantMap>"
     },
     {
       "trigger": "I-QVariantHash\tinc",
-      "contents": "#include <VariantHash>"
+      "contents": "#include <QVariantHash>"
     },
     {
       "trigger": "I-QApplication\tinc",
@@ -35,7 +35,7 @@
     },
     {
       "trigger": "I-QGuiApplication\tinc",
-      "contents": "#includeGuiApplication <Q>"
+      "contents": "#include <QGuiApplication>"
     },
     {
       "trigger": "I-QCoreApplication\tinc",
@@ -256,6 +256,66 @@
     {
       "trigger": "I-QPair\tinc",
       "contents": "#include <QPair>"
+    },
+    {
+      "trigger": "I-QJsonDocument\tinc",
+      "contents": "#include <QJsonDocument>"
+    },
+    {
+      "trigger": "I-QJsonValue\tinc",
+      "contents": "#include <QJsonValue>"
+    },
+    {
+      "trigger": "I-QJsonObject\tinc",
+      "contents": "#include <QJsonObject>"
+    },
+    {
+      "trigger": "I-QJsonArray\tinc",
+      "contents": "#include <QJsonArray>"
+    },
+    {
+      "trigger": "I-QUrl\tinc",
+      "contents": "#include <QUrl>"
+    },
+    {
+      "trigger": "I-QUrlQuery\tinc",
+      "contents": "#include <QUrlQuery>"
+    },
+    {
+      "trigger": "I-QWebEngineView\tinc",
+      "contents": "#include <QWebEngineView>"
+    },
+    {
+      "trigger": "I-QWebEnginePage\tinc",
+      "contents": "#include <QWebEnginePage>"
+    },
+    {
+      "trigger": "I-QWebEngineUrlSchemeHandler\tinc",
+      "contents": "#include <QWebEngineUrlSchemeHandler>"
+    },
+    {
+      "trigger": "I-QWebEngineUrlRequesetJob\tinc",
+      "contents": "#include <QWebEngineUrlRequesetJob>"
+    },
+    {
+      "trigger": "I-QWebEngineProfile\tinc",
+      "contents": "#include <QWebEngineProfile>"
+    },
+    {
+      "trigger": "I-QWebEngineCookieStore\tinc",
+      "contents": "#include <QWebEngineCookieStore>"
+    },
+    {
+      "trigger": "I-QWebEngineHistory\tinc",
+      "contents": "#include <QWebEngineHistory>"
+    },
+    {
+      "trigger": "I-QWebEngineSettings\tinc",
+      "contents": "#include <QWebEngineSettings>"
+    },
+    {
+      "trigger": "I-QWebEngineUrlRequestInterceptor\tinc",
+      "contents": "#include <QWebEngineUrlRequestInterceptor>"
     },
   ]
 }
