@@ -9,6 +9,7 @@
 		"All Autocomplete",
 		"ANSIescape",
 		"AutoFileName",
+		"BracketGuard",
 		"BracketHighlighter",
 		"Clang Format",
 		"CMake",
