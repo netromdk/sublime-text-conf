@@ -12,6 +12,21 @@
 		"/opt/local/bin/"
 	],
 	"auto_complete_cycle": true,
+	"auto_complete_triggers":
+	[
+		{
+			"characters": "<",
+			"selector": "text.html"
+		},
+		{
+			"characters": ".",
+			"selector": "source.c++"
+		},
+		{
+			"characters": "->",
+			"selector": "source.c++"
+		}
+	],
 	"binary_file_patterns":
 	[
 		"*.dds",
