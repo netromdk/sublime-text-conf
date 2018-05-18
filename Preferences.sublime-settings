@@ -3,7 +3,11 @@
 	[
 		"repo",
 		"inline",
-		"offline"
+		"offline",
+		"prepended",
+		"namespace",
+		"kcore",
+		"prepend"
 	],
 	"additional_path_items":
 	[
