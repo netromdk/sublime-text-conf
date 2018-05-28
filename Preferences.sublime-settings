@@ -7,7 +7,10 @@
 		"prepended",
 		"namespace",
 		"kcore",
-		"prepend"
+		"prepend",
+		"unsubscribe",
+		"financials",
+		"Remarketing"
 	],
 	"additional_path_items":
 	[
@@ -37,6 +40,7 @@
 	],
 	"binary_file_patterns":
 	[
+		"*.ies",
 		"*.7z",
 		"*.Z",
 		"*.a",
