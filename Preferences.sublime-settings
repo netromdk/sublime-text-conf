@@ -26,18 +26,6 @@
 			"characters": "<",
 			"selector": "text.html"
 		},
-		{
-			"characters": ".",
-			"selector": "source.c++"
-		},
-		{
-			"characters": "->",
-			"selector": "source.c++"
-		},
-		{
-			"characters": "::",
-			"selector": "source.c++"
-		}
 	],
 	"binary_file_patterns":
 	[
