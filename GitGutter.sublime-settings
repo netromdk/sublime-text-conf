@@ -5,4 +5,7 @@
 
   // Show in minimap with a wider outline to make it easier to spot.
   "show_in_minimap": 5,
+
+  // Show line annotation at end of line instead of at ruler. It isn't easy to read otherwise.
+  "line_annotation_ruler": false,
 }
