@@ -317,5 +317,9 @@
       "trigger": "I-QWebEngineUrlRequestInterceptor\tinc",
       "contents": "#include <QWebEngineUrlRequestInterceptor>"
     },
+    {
+      "trigger": "I-QCheckBox\tinc",
+      "contents": "#include <QCheckBox>"
+    },
   ]
 }

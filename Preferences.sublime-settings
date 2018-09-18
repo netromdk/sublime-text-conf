@@ -11,7 +11,7 @@
 		"prepend",
 		"prepended",
 		"repo",
-		"unsubscribe",
+		"unsubscribe"
 	],
 	"additional_path_items":
 	[
@@ -25,7 +25,7 @@
 		{
 			"characters": "<",
 			"selector": "text.html"
-		},
+		}
 	],
 	"binary_file_patterns":
 	[
