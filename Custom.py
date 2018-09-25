@@ -154,31 +154,32 @@ class InsertCppIncludeGuardCommand(sublime_plugin.TextCommand):
     self.view.insert(edit, 0, "#ifndef {}{}#define {}{}{}".format(guard, nl, guard, nl, nl))
     self.view.insert(edit, self.view.size(), "{}{}#endif // {}{}".format(nl, nl, guard, nl))
 
-class LineCountUpdateListener(sublime_plugin.EventListener):
-  """Updates line count in status bar at intervals."""
-
-  def __init__(self):
-    super(LineCountUpdateListener).__init__()
-    self.__last_change = 0  # Start at "never".
-    self.__update_interval = 2.0  # s
-    self.__status_key = "custom_line_count"
-
-  def __update_line_count(self, view):
-    line_count = line_at_pos(view.size(), view) + 1
-    view.set_status(self.__status_key, "Lines: {}".format(line_count))
-
-  def on_modified(self, view):
-    now = time()
-    if now > self.__last_change + self.__update_interval:
-      self.__last_change = now
-      interval = int(self.__update_interval * 1000)
-      sublime.set_timeout(lambda: self.__update_line_count(view), interval)
-
-  # When new buffer is created.
-  on_new = __update_line_count
-
-  # When a file finished loading.
-  on_load = __update_line_count
+# Disabled due to slowdown and it's not necessary to waste CPU cycles on it.
+#class LineCountUpdateListener(sublime_plugin.EventListener):
+#  """Updates line count in status bar at intervals."""
+#
+#  def __init__(self):
+#    super(LineCountUpdateListener).__init__()
+#    self.__last_change = 0  # Start at "never".
+#    self.__update_interval = 2.0  # s
+#    self.__status_key = "custom_line_count"
+#
+#  def __update_line_count(self, view):
+#    line_count = line_at_pos(view.size(), view) + 1
+#    view.set_status(self.__status_key, "Lines: {}".format(line_count))
+#
+#  def on_modified(self, view):
+#    now = time()
+#    if now > self.__last_change + self.__update_interval:
+#      self.__last_change = now
+#      interval = int(self.__update_interval * 1000)
+#      sublime.set_timeout(lambda: self.__update_line_count(view), interval)
+#
+#  # When new buffer is created.
+#  on_new = __update_line_count
+#
+#  # When a file finished loading.
+#  on_load = __update_line_count
 
 class RecenterTopBottomCommand(sublime_plugin.TextCommand):
   """Places current line as center, top, and bottom in a cycling manner. Only works with one
