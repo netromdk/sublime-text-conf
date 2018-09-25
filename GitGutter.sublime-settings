@@ -8,4 +8,8 @@
 
   // Show line annotation at end of line instead of at ruler. It isn't easy to read otherwise.
   "line_annotation_ruler": false,
+
+  // Extend with hash of commit to look up easier.
+  "line_annotation_text":
+    "{{line_author}} ({{line_author_age}}) · {{line_summary}} · {{line_commit}}",
 }
